@@ -44,18 +44,31 @@ header {
     height: 130px;
 }
 
-/* soegefunktion oppe i navigationen */ 
-input {
-    padding: 5px;
-    font-size: 10px;
-    width: 110px;
+
+
+/* Styling af søgefeltet */
+.soegefelt {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    margin-right: 10px; /* Lidt afstand mellem feltet og knappen */
 }
 
-button {
-    padding: 5px;
-    font-size: 10px;
+/* Styling af søgeknappen */
+.soegeknap {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
+
+
 
 
 
