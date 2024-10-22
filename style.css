@@ -41,7 +41,7 @@ header {
 }
 
 .logo {
-    height: 130px;
+    height: 80px;
 }
 
 
@@ -49,7 +49,7 @@ header {
 /* Styling af søgefeltet */
 .soegefelt {
     padding: 10px;
-    font-size: 16px;
+    font-size: 12px;
     border: 2px solid #ccc;
     border-radius: 5px;
     width: 200px;
@@ -58,10 +58,10 @@ header {
 
 /* Styling af søgeknappen */
 .soegeknap {
-    background-color: #e74c3c;
-    color: white;
+    background-color: #d4342b;
+    color: #ffffff;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 20px;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
