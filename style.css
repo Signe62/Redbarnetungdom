@@ -1,0 +1,102 @@
+/* Header og navigation */
+header {
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.navigation-container-forside {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-indhold {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navigation-container-forside ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navigation-container-forside ul li a {
+    font-family: Helvetica, sans-serif;
+    color: #ff9100;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navigation-container-forside ul li a:hover, 
+.navigation-container-forside ul li a.active {
+    color: #d4342b;
+}
+
+.logo {
+    height: 130px;
+}
+
+
+/* Banner og tekst */
+.banner img {
+    width: 100%; /* Gør billedet 100% af view-port bredden */
+}
+
+.banner h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 48px;
+}
+
+
+/* Hvem er red barnet ungdom? - afsnit */
+.hvem-er-vi h2 {
+    color: #ff9100;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hvem-er-vi p {
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+
+/* Læs mere knap */
+.laes-mere-knap {
+    color: #ffffff;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: #d4342b;
+}
+
+.laes-mere-knap:hover {
+    background-color: #ff9100;
+}
+
+
+/* De 3 billeder */
+.billede-frivillig {
+    width: 100%;
+}
+
+.billede-doner {
+    width: 100%;
+}
+
+.billede-test {
+    width: 100%;
+}
