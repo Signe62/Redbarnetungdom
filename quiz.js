@@ -50,3 +50,27 @@ function showResult() {
     // Set progress bar to 100% on result
     updateProgressBar(totalQuestions);
 }
+
+function showSingleResult(result) {
+    let resultText = getResultText(result);
+    document.getElementById('result-text').textContent = resultText;
+}
+
+function showMultipleResults() {
+    let resultText = "Du passer til flere frivillige roller. \n" +
+        "Derfor ville en rolle i bestyrelsen være attraktiv for dig, da man som medlem i bestyrelsen har indflydelse på alle slags frivilligt arbejde.";
+    document.getElementById('result-text').textContent = resultText;
+}
+
+function getResultText(result) {
+    switch (result) {
+        case 'running':
+            return 'At være medlem i løbeklubben. Som medlem i løbeklubben går medlemsprisen pr. måned direkte til Red Barnet Ungdom, og du bliver en del af et ungt fællesskab med god energi.';
+        case 'learning':
+            return 'At undervise børn og unge. Du vil være med til at støtte og styrke børn og unge, der har det svært i skolen - Bl.a. med lektiehjælp, læring og selvtillid.';
+        case 'crisis':
+            return 'At hjælpe børn på krisecentre. Her vil du være med til at give børn der bor på krisecentre et frirum og et meningsfuldt fællesskab.';
+        default:
+            return ''; // No log for unknown results
+    }
+}
