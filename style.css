@@ -301,27 +301,30 @@ header {
     
 }
 
+
+        /* Færdig CSS til footeren */
+
+/* CSS til quizzen */
 .question {
     display: none;
+    text-align: center;
 }
 .active {
     display: block;
 }
+
 .progress-container {
-    width: 100%;
-    background-color: #f3f3f3;
-    border-radius: 25px;
-    margin: 20px 0;
+    width: 50%;
+    background-color: #93c7f3;
+    border-radius: 10px;
+    margin: 40px 0;
 }
 .progress-bar {
     width: 0%;
-    height: 20px;
+    height: 12px;
     background-color: #6E95B6;
     border-radius: 25px;
 }
-
-        /* Færdig CSS til footeren */
-
 
         /* CSS til tilmeldingsformular*/
 
