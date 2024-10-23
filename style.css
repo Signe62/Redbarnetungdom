@@ -282,3 +282,22 @@ header {
     background-color: #6E95B6; 
     
 }
+
+.question {
+    display: none;
+}
+.active {
+    display: block;
+}
+.progress-container {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 25px;
+    margin: 20px 0;
+}
+.progress-bar {
+    width: 0%;
+    height: 20px;
+    background-color: #6E95B6;
+    border-radius: 25px;
+}
