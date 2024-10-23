@@ -242,7 +242,10 @@ header {
     width: 300px; 
 }
 
-/* CSS til footeren */
+
+
+        /* CSS til footeren */
+        
 .footer {
     background-color: #93c7f3;
 }
@@ -302,7 +305,10 @@ header {
     border-radius: 25px;
 }
 
-/* styles til tilmeldingsformular*/
+        /* Færdig CSS til footeren */
+
+
+        /* CSS til tilmeldingsformular*/
 
 .tilmeld-body {
     font-family: Arial, sans-serif;
@@ -365,3 +371,5 @@ header {
     color: red;
     font-size: 14px;
 }
+
+        /* Færdig CSS til tilmeldsformular*/ 
