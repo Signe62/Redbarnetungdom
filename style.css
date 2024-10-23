@@ -301,7 +301,6 @@ header {
     
 }
 
-
         /* Færdig CSS til footeren */
 
 /* CSS til quizzen */
@@ -314,6 +313,7 @@ header {
     display: none;
     text-align: center;
 }
+
 .active {
     display: block;
 }
