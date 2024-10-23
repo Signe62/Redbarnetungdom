@@ -19,3 +19,11 @@ document.getElementById('tilmeldForm').addEventListener('submit', function(event
     const zipcode = document.getElementById('tilmeld-zipcode').value.trim(); // Henter og fjerner ekstra mellemrum fra postnummer-feltet
     const birthdate = document.getElementById('tilmeld-birthdate').value; // Henter fødselsdag
     const interest = document.getElementById('tilmeld-interest').value; // Henter den valgte mulighed fra dropdown-menuen
+
+    let hasError = false; // Variabel til at spore, om der er fejl i formularen
+
+    // **Validering af navnefeltet**: Hvis navnefeltet er tomt, vis en fejlmeddelelse
+    if (name === '') {
+        document.getElementById('tilmeld-navnError').textContent = 'Navn er påkrævet';
+        hasError = true; // Angiver at der er en fejl
+    }
