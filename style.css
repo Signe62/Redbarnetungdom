@@ -1,26 +1,18 @@
 /* Header og navigation */
 header {
     display: flex;
-    justify-content: center; /* Centrerer navigationen */
-    padding: 10px 20px;
     box-sizing: border-box;
-    background-color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Flex container for navigation indhold */
 .navigation-container-forside {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px; /* Sikrer at navigationen ikke bliver for bred */
 }
 
 .navigation-indhold {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-grow: 1; /* Sikrer at indholdet fylder pladsen mellem elementerne */
 }
 
 /* Flexbox for navigationspunkter */
@@ -31,6 +23,7 @@ header {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    padding-left: 200px;
 }
 
 /* Styling af links i navigationen */
@@ -47,34 +40,31 @@ header {
     color: #d4342b;
 }
 
-/* Søgefelt container, bruger flexbox til at justere søgefelt og knap */
-.search-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
 /* Søgefelt */
 .soegefelt {
+    font-family: Helvetica, sans-serif;
     padding: 8px;
-    font-size: 14px;
+    font-size: 12px;
     border: 1px solid #ccc;
     border-radius: 20px;
-    width: 180px;
+    width: 140px;
 }
 
 /* Søgeknap */
 .soegeknap {
+    font-family: Helvetica, sans-serif;
+    color: gray;
+    font-weight: bold;
     padding: 5px 10px;
-    font-size: 14px;
-    background-color: transparent;
-    border: 2px solid black;
+    background-color: #ccc;
+    font-size: 12px;
+    border: 1px solid #ccc;
     border-radius: 20px;
     cursor: pointer;
 }
 
 .soegeknap:hover {
-    background-color: #ccc;
+    color: #d4342b;
 }
 
 /* Knap til at blive frivillig */
@@ -82,28 +72,22 @@ header {
     background-color: #4A90E2;
     color: white;
     padding: 8px 15px;
-    font-size: 16px;
+    font-size: 12px;
     border-radius: 20px;
     text-decoration: none;
-    margin-left: 20px;
 }
 
-.bliv-frivillig-knap:hover {
-    background-color: #357ABD;
-}
 
 /* Banner sektion */
 .banner {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
-    background-color: #ddd;
+    height: auto;
 }
 
 .banner img {
-    width: 100%; /* Gør billedet 100% af view-port bredden */
+    width: 100%;
 }
 
 .banner h1 {
@@ -125,7 +109,7 @@ header {
 .hvem-er-vi h2 {
     color: #ff9100;
     font-size: 48px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Helvetica, sans-serif
 }
 
 .hvem-er-vi p {
