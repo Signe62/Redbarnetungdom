@@ -11,3 +11,11 @@ document.getElementById('tilmeldForm').addEventListener('submit', function(event
     document.getElementById('tilmeld-birthdateError').textContent = '';
     document.getElementById('tilmeld-interestError').textContent = ''; 
     
+    // Hent værdierne fra inputfelterne
+    const name = document.getElementById('tilmeld-navn').value.trim(); // Henter og fjerner ekstra mellemrum fra navnefeltet
+    const email = document.getElementById('tilmeld-email').value.trim(); // Henter og fjerner ekstra mellemrum fra e-mailfeltet
+    const phone = document.getElementById('tilmeld-phone').value.trim(); // Henter og fjerner ekstra mellemrum fra telefonfeltet
+    const city = document.getElementById('tilmeld-city').value.trim(); // Henter og fjerner ekstra mellemrum fra by-feltet
+    const zipcode = document.getElementById('tilmeld-zipcode').value.trim(); // Henter og fjerner ekstra mellemrum fra postnummer-feltet
+    const birthdate = document.getElementById('tilmeld-birthdate').value; // Henter fødselsdag
+    const interest = document.getElementById('tilmeld-interest').value; // Henter den valgte mulighed fra dropdown-menuen
