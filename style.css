@@ -305,6 +305,11 @@ header {
         /* Færdig CSS til footeren */
 
 /* CSS til quizzen */
+.quiz-tekst {
+    text-align: center;
+    font-size: large
+}
+
 .question {
     display: none;
     text-align: center;
