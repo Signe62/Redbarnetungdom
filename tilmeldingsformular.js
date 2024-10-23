@@ -86,3 +86,8 @@ function validateEmail(email) {
     return re.test(email); // Returnerer true, hvis e-mailen passer med reglen
 }
 
+// **Validering af telefonnummeret**: Simpel funktion til at tjekke om telefonnummeret har 8 cifre
+function validatePhone(phone) {
+    const re = /^\d{8}$/; // Regel for danske telefonnumre, som skal være præcis 8 cifre
+    return re.test(phone); // Returnerer true, hvis telefonnummeret er gyldigt
+}
