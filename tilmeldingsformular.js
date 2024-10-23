@@ -36,12 +36,18 @@ document.getElementById('tilmeldForm').addEventListener('submit', function(event
         document.getElementById('tilmeld-emailError').textContent = 'Indtast en gyldig e-mail';
         hasError = true;
     }
-    
+
     // **Validering af telefonnummerfeltet**: Hvis telefonnummeret er tomt eller ikke passer med det rigtige format, vis en fejlmeddelelse
     if (phone === '') {
         document.getElementById('tilmeld-phoneError').textContent = 'Telefonnummer er påkrævet';
         hasError = true;
     } else if (!validatePhone(phone)) {
         document.getElementById('tilmeld-phoneError').textContent = 'Indtast et gyldigt telefonnummer';
+        hasError = true;
+    }
+
+    // **Validering af by-feltet**: Hvis by-feltet er tomt, vis en fejlmeddelelse
+    if (city === '') {
+        document.getElementById('tilmeld-cityError').textContent = 'By er påkrævet';
         hasError = true;
     }
