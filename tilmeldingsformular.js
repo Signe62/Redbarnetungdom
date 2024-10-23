@@ -72,3 +72,10 @@ document.getElementById('tilmeldForm').addEventListener('submit', function(event
         document.getElementById('tilmeld-interestError').textContent = 'Vælg en interesse';
         hasError = true;
     }
+
+    // Hvis der ikke er nogen fejl, vis en bekræftelse til brugeren
+    if (!hasError) {
+        alert(`Tak for din tilmelding, ${name}! Vi kontakter dig snart.`);
+        // Her kan formulardata sendes til en server eller API
+    }
+});
