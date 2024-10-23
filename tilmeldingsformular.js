@@ -51,3 +51,12 @@ document.getElementById('tilmeldForm').addEventListener('submit', function(event
         document.getElementById('tilmeld-cityError').textContent = 'By er påkrævet';
         hasError = true;
     }
+
+    // **Validering af postnummer-feltet**: Hvis postnummeret er tomt eller ikke har det korrekte format, vis en fejlmeddelelse
+    if (zipcode === '') {
+        document.getElementById('tilmeld-zipcodeError').textContent = 'Postnummer er påkrævet';
+        hasError = true;
+    } else if (!/^\d{4}$/.test(zipcode)) { // Tjekker at postnummeret er 4 cifre
+        document.getElementById('tilmeld-zipcodeError').textContent = 'Indtast et gyldigt postnummer';
+        hasError = true;
+    }
