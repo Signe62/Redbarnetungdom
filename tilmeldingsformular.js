@@ -60,3 +60,9 @@ document.getElementById('tilmeldForm').addEventListener('submit', function(event
         document.getElementById('tilmeld-zipcodeError').textContent = 'Indtast et gyldigt postnummer';
         hasError = true;
     }
+
+    // **Validering af fødselsdag-feltet**: Hvis fødselsdagen er tom, vis en fejlmeddelelse
+    if (birthdate === '') {
+        document.getElementById('tilmeld-birthdateError').textContent = 'Fødselsdag er påkrævet';
+        hasError = true;
+    }
