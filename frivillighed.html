@@ -34,12 +34,36 @@
     </section>
 
     <h3 class="frivillighedh3">Hvilken type frivillighed passer bedst til dig?</h3>
-    
+
     <!-- Progress Bar -->
     <div class="progress-container">
         <div class="progress-bar" id="progressBar"></div>
     </div>
     
+    <!-- Question 1 -->
+    <div class="question active" id="question1">
+        <p>Hvilken form for aktivitet finder du mest interessant?</p>
+        <button onclick="answerQuestion(1, 'running')">At være fysisk aktiv og støtte en god sag.</button>
+        <button onclick="answerQuestion(1, 'learning')">At hjælpe andre med at lære.</button>
+        <button onclick="answerQuestion(1, 'crisis')">At støtte børn i vanskelige situationer.</button>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question" id="question2">
+        <p>Hvordan vil du helst bidrage som frivillig?</p>
+        <button onclick="answerQuestion(2, 'running')">Ved at få mennesker til at deltage i en sjov og sund aktivitet.</button>
+        <button onclick="answerQuestion(2, 'learning')">Ved at støtte børn og unge i deres læring.</button>
+        <button onclick="answerQuestion(2, 'crisis')">Ved at give tryghed til børn i svære situationer.</button>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question" id="question3">
+        <p>Hvad motiverer dig mest i frivilligt arbejde?</p>
+        <button onclick="answerQuestion(3, 'running')">At kunne kombinere sport og velgørenhed.</button>
+        <button onclick="answerQuestion(3, 'learning')">At hjælpe børn med at nå deres faglige mål.</button>
+        <button onclick="answerQuestion(3, 'crisis')">At skabe en tryg hverdag for børn i sårbare situationer.</button>
+    </div>
+
     <h3 class="frivillighedh3">Tilmeldingsformular til at blive frivillig</h3>
 
     <footer class="footer">
