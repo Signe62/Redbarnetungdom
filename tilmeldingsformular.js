@@ -66,3 +66,9 @@ document.getElementById('tilmeldForm').addEventListener('submit', function(event
         document.getElementById('tilmeld-birthdateError').textContent = 'Fødselsdag er påkrævet';
         hasError = true;
     }
+
+    // **Validering af interessefeltet**: Hvis der ikke er valgt nogen interesse, vis en fejlmeddelelse
+    if (interest === '') {
+        document.getElementById('tilmeld-interestError').textContent = 'Vælg en interesse';
+        hasError = true;
+    }
