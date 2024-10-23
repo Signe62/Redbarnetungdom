@@ -1,3 +1,4 @@
+/* CSS til forsiden */
 /* Header og navigation */
 header {
     display: flex;
@@ -137,7 +138,7 @@ header {
     background-color: #ff9100;
 }
 
-/* Handlinger sektion */
+/* Handlinger sektion - de 3 billeder */
 /* Container for hele sektionen med blå baggrund */
 .handlinger {
     display: flex;
