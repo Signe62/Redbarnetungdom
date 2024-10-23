@@ -79,3 +79,10 @@ document.getElementById('tilmeldForm').addEventListener('submit', function(event
         // Her kan formulardata sendes til en server eller API
     }
 });
+
+// **Validering af e-mailen**: Simpel funktion til at tjekke om e-mailformatet er korrekt
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regel for hvordan en gyldig e-mail ser ud
+    return re.test(email); // Returnerer true, hvis e-mailen passer med reglen
+}
+
