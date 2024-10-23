@@ -138,29 +138,31 @@ header {
 }
 
 /* Handlinger sektion */
+/* Container for hele sektionen med blå baggrund */
 .handlinger {
     display: flex;
-    justify-content: space-around; /* Gør at elementerne bliver spredt ud */
-    align-items: flex-start;
-    padding: 40px 0;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #93c7f3;
+    max-width: 100%; /* Maksimal bredde på boksen */
 }
 
+/* Styling af individuelle handlingselementer */
 .handling-element {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 300px;
+    padding: 20px;
 }
 
 /* Billederne i handlinger sektionen */
 .billede-frivillig, .billede-doner, .billede-test {
     width: 100%;
-    border-radius: 10px;
 }
 
 /* Kald til handling knap i handlinger sektionen */
 .kald-til-handling-knap {
-    font-family: Helvetica, sans-serif;
     background-color: #d4342b;
     color: white;
     text-decoration: none;
@@ -168,11 +170,14 @@ header {
     border-radius: 20px;
     margin-top: 15px;
     font-size: 18px;
+    text-align: center;
+    display: inline-block;
 }
 
 .kald-til-handling-knap:hover {
     background-color: #ff9100;
 }
+
 
 
 
