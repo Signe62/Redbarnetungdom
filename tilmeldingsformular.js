@@ -27,3 +27,12 @@ document.getElementById('tilmeldForm').addEventListener('submit', function(event
         document.getElementById('tilmeld-navnError').textContent = 'Navn er påkrævet';
         hasError = true; // Angiver at der er en fejl
     }
+
+    // **Validering af e-mailfeltet**: Hvis e-mailen er tom, eller ikke er korrekt formatet, vis en fejlmeddelelse
+    if (email === '') {
+        document.getElementById('tilmeld-emailError').textContent = 'E-mail er påkrævet';
+        hasError = true;
+    } else if (!validateEmail(email)) {
+        document.getElementById('tilmeld-emailError').textContent = 'Indtast en gyldig e-mail';
+        hasError = true;
+    }
