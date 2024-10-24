@@ -115,7 +115,6 @@ header {
     /* Banner sektion slut*/
 
 
-
     /* Hvem er vi sektion */
 .hvem-er-vi {
     display: flex;
@@ -202,7 +201,6 @@ header {
 
 
     /* CSS til frivillighed-siden */ 
-
 .frivillighedh1 { /* Mød en af vores frivillige*/
     text-align: center;
     font-size: 48px;
@@ -257,7 +255,6 @@ header {
     height: 280px;
     width: 300px; 
 }
-
     /* CSS til frivillighed-siden slut*/ 
 
 
@@ -329,16 +326,17 @@ header {
     background-color: #6E95B6;
     border-radius: 25px;
 }
-        /* CSS til quizzen slut*/
+    /* CSS til quizzen slut*/
 
 
-        /* CSS til tilmeldingsformular*/
+    /* CSS til tilmeldingsformular*/
 .tilmeld-body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
 }
+
 .tilmeld-container {
     max-width: 600px;
     margin: 0 auto;
@@ -347,10 +345,12 @@ header {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .tilmeld-h2 {
     text-align: center;
     color: #333;
 }
+
 /* Formulargupper */
 .tilmeld-form-group {
     margin-bottom: 15px;
@@ -368,6 +368,7 @@ header {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
 /* Knappen */
 .tilmeld-button {
     background-color: #d4342b;
@@ -378,13 +379,14 @@ header {
     cursor: pointer;
     width: 100%;
 }
+
 .tilmeld-button:hover {
     background-color: #96251f;
 }
+
 /* Fejlmeddelelser */
 .tilmeld-error {
     color: red;
     font-size: 14px;
 }
-
-        /* CSS til tilmeldingsformular slut*/
+    /* CSS til tilmeldingsformular slut*/
