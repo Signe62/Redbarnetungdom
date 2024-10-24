@@ -1,6 +1,7 @@
 /* Forsiden */
 body {
     margin: 0px;
+    font-family: Helvetica, sans-serif;
 }
 
 /* Flex container for navigation indhold */
@@ -20,17 +21,14 @@ body {
     list-style-type: none;
 }
 
-/* Styling af links i navigationen */
-.navigation-container-forside ul li a {
-    font-family: Helvetica, sans-serif;
+.navigationspunkter li a {
     color: #ff9100;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
 }
 
-.navigation-container-forside ul li a:hover,
-.navigation-container-forside ul li a.active {
+.navigationspunkter li a:hover {
     color: #d4342b;
 }
 
@@ -71,17 +69,21 @@ body {
     text-decoration: none;
 }
 
+
 /* Banner sektion */
 .banner {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: auto;
+    width: 1522px;
+    height: 458px;
 }
 
 .banner img {
     width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 
 .banner h1 {
@@ -138,6 +140,7 @@ body {
     background-color: #93c7f3; /* Blå baggrund */
     padding: 40px 0;
     margin-top: 20px;
+    height: 760px;
 }
 
 /* Flexbox layout for handlinger */
