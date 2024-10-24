@@ -1,10 +1,6 @@
-/* Header og navigation */
-header {
-    display: flex;
-    justify-content: center; /* Centrerer navigationen */
-    padding: 10px 20px;
-    box-sizing: border-box;
-    background-color: #fff;
+/* Forsiden */
+body {
+    margin: 0px;
 }
 
 /* Flex container for navigation indhold */
@@ -12,25 +8,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 1200px; /* Sikrer at navigationen ikke bliver for bred */
-}
-
-.navigation-indhold {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-grow: 1; /* Sikrer at indholdet fylder pladsen mellem elementerne */
+    margin: 0px;
+    padding: 0px;
 }
 
 /* Flexbox for navigationspunkter */
 .navigationspunkter {
     display: flex;
     align-items: center;
-    gap: 30px; /* Afstand mellem hver menu-item */
+    gap: 30px;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 /* Styling af links i navigationen */
@@ -39,19 +26,16 @@ header {
     color: #ff9100;
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-.navigation-container-forside ul li a:hover, 
+.navigation-container-forside ul li a:hover,
 .navigation-container-forside ul li a.active {
     color: #d4342b;
 }
 
-/* Søgefelt container, bruger flexbox til at justere søgefelt og knap */
-.search-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.logo {
+    width: 150px;
 }
 
 /* Søgefelt */
@@ -66,56 +50,48 @@ header {
 /* Søgeknap */
 .soegeknap {
     padding: 5px 10px;
-    font-size: 14px;
-    background-color: transparent;
-    border: 2px solid black;
+    font-size: 12px;
+    background-color: grey;
+    border: 2px solid grey;
     border-radius: 20px;
     cursor: pointer;
 }
 
 .soegeknap:hover {
-    background-color: #ccc;
+    background-color:#ff9100;
 }
 
 /* Knap til at blive frivillig */
 .bliv-frivillig-knap {
-    background-color: #4A90E2;
-    color: white;
+    background-color: #93c7f3;
+    color: #ffffff;
     padding: 8px 15px;
-    font-size: 16px;
+    font-size: 12px;
     border-radius: 20px;
     text-decoration: none;
-    margin-left: 20px;
 }
 
-.bliv-frivillig-knap:hover {
-    background-color: #357ABD;
-}
-
-    /* Banner sektion */
+/* Banner sektion */
 .banner {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
-    background-color: #ddd;
+    max-width: auto;
 }
 
 .banner img {
-    width: 100%; /* Gør billedet 100% af view-port bredden */
+    width: 100%;
 }
 
 .banner h1 {
     position: absolute;
     color: #ffffff;
     font-size: 48px;
-    z-index: 1; /* Sørger for at tekst er over billedet */
+    z-index: 1;
 }
-    /* Banner sektion slut*/
 
-
-    /* Hvem er vi sektion */
+/* Hvem er vi sektion */
 .hvem-er-vi {
     display: flex;
     flex-direction: column;
@@ -127,11 +103,11 @@ header {
 .hvem-er-vi h2 {
     color: #ff9100;
     font-size: 48px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .hvem-er-vi p {
     font-family: Helvetica, sans-serif;
+    text-align: left;
     font-size: 18px;
     padding-left: 150px;
     padding-right: 150px;
@@ -149,55 +125,81 @@ header {
     border-radius: 20px;
     cursor: pointer;
     margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .laes-mere-knap:hover {
     background-color: #ff9100;
 }
-    /* Hvem er vi sektion slut*/
 
-
-    /* Handlinger sektion */
-.handlinger {
-    display: flex;
-    justify-content: space-around; /* Gør at elementerne bliver spredt ud */
-    align-items: flex-start;
+/* Container for handlinger med blå baggrund */
+.handlinger-container {
+    background-color: #93c7f3; /* Blå baggrund */
     padding: 40px 0;
+    margin-top: 20px;
 }
 
+/* Flexbox layout for handlinger */
+.handlinger {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styling af individuelle handlingselementer */
 .handling-element {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
     max-width: 300px;
+}
+
+/* overskrifter i handling*/
+.handling-element h3{
+    font-family: Merriweather;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Broedtekst i handling*/
+.handling-element p{
+    font-family: Helvetica;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
 }
 
 /* Billederne i handlinger sektionen */
 .billede-frivillig, .billede-doner, .billede-test {
-    width: 100%;
-    border-radius: 10px;
+    width: 360px;
+    height: 391px;
 }
 
-/* Kald til handling knap i handlinger sektionen */
+/* Knapper til call-to-action i handlinger */
 .kald-til-handling-knap {
     background-color: #d4342b;
     color: white;
     text-decoration: none;
+    font-family: Helvetica, sans-serif;
     padding: 10px 20px;
     border-radius: 20px;
     margin-top: 15px;
     font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
 }
 
-    /* Handlinger sektion slut*/
+.kald-til-handling-knap:hover {
+    background-color: #ff9100;
+}
 
 
-
-    /* JS-funktion på forsiden - billedslide */
-
-
-
-    /* JS-funktion på forsiden - søgefunktion */
 
 
     /* CSS til frivillighed-siden */ 
