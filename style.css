@@ -344,14 +344,17 @@ header {
     max-width: 600px;
     margin: 0 auto;
     background-color: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 .tilmeld-h2 {
     text-align: center;
-    color: #333;
+    color: #ff9100; ;
+    font-size: 30px;
 }
 
 /* Formulargupper */
@@ -368,21 +371,25 @@ header {
 /* Inputfelter */
 .tilmeld-input, .tilmeld-select {
     width: 100%;
-    padding: 20px;
-    margin-top: 5px;
+    padding: 0px;
+    margin-top: 2px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    height: 30px;
 }
 
 /* Knappen */
 .tilmeld-button {
     background-color: #d4342b;
     color: white;
+    font-size: 15px;
+    font-weight: bold;
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
+    margin-top: 10px;
 }
 
 .tilmeld-button:hover {
