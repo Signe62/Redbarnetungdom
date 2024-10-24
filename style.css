@@ -297,7 +297,6 @@ header {
     text-align: center;
     color: lightgrey;
     background-color: #6E95B6; 
-    
 }
     /* CSS til footeren slut*/
 
@@ -307,19 +306,23 @@ header {
     text-align: center;
     font-size: large
 }
+
 .question {
     display: none;
     text-align: center;
 }
+
 .active {
     display: block;
 }
+
 .progress-container {
     width: 50%;
     background-color: #93c7f3;
     border-radius: 10px;
     margin: 40px 0;
 }
+
 .progress-bar {
     width: 0%;
     height: 12px;
@@ -355,11 +358,13 @@ header {
 .tilmeld-form-group {
     margin-bottom: 15px;
 }
+
 .tilmeld-label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
+
 /* Inputfelter */
 .tilmeld-input, .tilmeld-select {
     width: 100%;
