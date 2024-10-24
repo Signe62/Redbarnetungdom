@@ -1,19 +1,26 @@
-/* CSS til forsiden */
 /* Header og navigation */
 header {
     display: flex;
+    justify-content: center; /* Centrerer navigationen */
+    padding: 10px 20px;
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
+    background-color: #fff;
 }
 
 /* Flex container for navigation indhold */
 .navigation-container-forside {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Sikrer at navigationen ikke bliver for bred */
 }
 
 .navigation-indhold {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1; /* Sikrer at indholdet fylder pladsen mellem elementerne */
 }
 
 /* Flexbox for navigationspunkter */
@@ -24,7 +31,6 @@ header {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    padding-left: 200px;
 }
 
 /* Styling af links i navigationen */
@@ -41,54 +47,63 @@ header {
     color: #d4342b;
 }
 
+/* Søgefelt container, bruger flexbox til at justere søgefelt og knap */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 /* Søgefelt */
 .soegefelt {
-    font-family: Helvetica, sans-serif;
     padding: 8px;
-    font-size: 12px;
+    font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 20px;
-    width: 140px;
+    width: 180px;
 }
 
 /* Søgeknap */
 .soegeknap {
-    font-family: Helvetica, sans-serif;
-    color: gray;
-    font-weight: bold;
     padding: 5px 10px;
-    background-color: #ccc;
-    font-size: 12px;
-    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: transparent;
+    border: 2px solid black;
     border-radius: 20px;
     cursor: pointer;
 }
 
 .soegeknap:hover {
-    color: #d4342b;
+    background-color: #ccc;
 }
 
 /* Knap til at blive frivillig */
 .bliv-frivillig-knap {
-    background-color: #93c7f3;
-    color: #ffffff;
+    background-color: #4A90E2;
+    color: white;
     padding: 8px 15px;
-    font-size: 12px;
+    font-size: 16px;
     border-radius: 20px;
     text-decoration: none;
+    margin-left: 20px;
 }
 
+.bliv-frivillig-knap:hover {
+    background-color: #357ABD;
+}
 
 /* Banner sektion */
 .banner {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
+    height: 400px;
+    background-color: #ddd;
 }
 
 .banner img {
-    width: 100%;
+    width: 100%; /* Gør billedet 100% af view-port bredden */
 }
 
 .banner h1 {
@@ -103,14 +118,14 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: left;
+    text-align: center;
     padding: 40px 0;
 }
 
 .hvem-er-vi h2 {
     color: #ff9100;
     font-size: 48px;
-    font-family: Helvetica, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .hvem-er-vi p {
@@ -138,28 +153,25 @@ header {
     background-color: #ff9100;
 }
 
-/* Handlinger sektion - de 3 billeder */
-/* Container for hele sektionen med blå baggrund */
+/* Handlinger sektion */
 .handlinger {
     display: flex;
-    justify-content: space-around;
-    padding: 40px 20px;
-    background-color: #93c7f3;
-    max-width: 100%; /* Maksimal bredde på boksen */
+    justify-content: space-around; /* Gør at elementerne bliver spredt ud */
+    align-items: flex-start;
+    padding: 40px 0;
 }
 
-/* Styling af individuelle handlingselementer */
 .handling-element {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 300px;
-    padding: 20px;
 }
 
 /* Billederne i handlinger sektionen */
 .billede-frivillig, .billede-doner, .billede-test {
     width: 100%;
+    border-radius: 10px;
 }
 
 /* Kald til handling knap i handlinger sektionen */
@@ -170,20 +182,9 @@ header {
     padding: 10px 20px;
     border-radius: 20px;
     margin-top: 15px;
-    font-family: Helvetica, sans-serif;
     font-size: 18px;
-    text-align: center;
-    display: inline-block;
 }
 
-.kald-til-handling-knap:hover {
-    background-color: #ff9100;
-}
-
-
-
-
-<<<<<<< HEAD
 
 
 
@@ -195,17 +196,12 @@ header {
 
 
 /* CSS til frivillighed-siden */ 
-=======
-.kald-til-handling-knap:hover {
-    background-color: #ff9100;
-}
->>>>>>> 0353807831b26f2115e710af676678c38d48715b
 
 .frivillighedh1 { /* Mød en af vores frivillige*/
     text-align: center;
     font-size: 48px;
     font-family: merriweather; 
-    color: #ff9100;  
+    color: #ff9100;   
 }
 
 .frivillighedh2 { /* "Hør, hvordan det er at være frivillig i Red Barnet Ungdom" */
@@ -221,7 +217,6 @@ header {
     font-size: 48px;
     margin-top: 150px;
 }
-
 
 .frivillighedbillede123 { /* De 3 første billeder i slideshowet */
     display: flex;
@@ -257,12 +252,10 @@ header {
     width: 300px; 
 }
 
-
-
-        /* CSS til footeren */
-
+/* CSS til footeren */
 .footer {
     background-color: #93c7f3;
+    
 }
 
 .footercontent {
@@ -300,99 +293,3 @@ header {
     background-color: #6E95B6; 
     
 }
-
-        /* Færdig CSS til footeren */
-
-/* CSS til quizzen */
-.quiz-tekst {
-    text-align: center;
-    font-size: large
-}
-
-.question {
-    display: none;
-    text-align: center;
-}
-
-.active {
-    display: block;
-}
-
-.progress-container {
-    width: 50%;
-    background-color: #93c7f3;
-    border-radius: 10px;
-    margin: 40px 0;
-}
-.progress-bar {
-    width: 0%;
-    height: 12px;
-    background-color: #6E95B6;
-    border-radius: 25px;
-}
-
-        /* CSS til tilmeldingsformular*/
-
-.tilmeld-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
-}
-
-.tilmeld-container {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.tilmeld-h2 {
-    text-align: center;
-    color: #333;
-}
-
-/* Formulargupper */
-.tilmeld-form-group {
-    margin-bottom: 15px;
-}
-
-.tilmeld-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-/* Inputfelter */
-.tilmeld-input, .tilmeld-select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-/* Knappen */
-.tilmeld-button {
-    background-color: #d4342b;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-}
-
-.tilmeld-button:hover {
-    background-color: #96251f;
-}
-
-/* Fejlmeddelelser */
-.tilmeld-error {
-    color: red;
-    font-size: 14px;
-}
-
-        /* Færdig CSS til tilmeldsformular*/ 
