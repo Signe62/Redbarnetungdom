@@ -1,6 +1,7 @@
 /* Forsiden */
 body {
     margin: 0px;
+    font-family: Helvetica, sans-serif;
 }
 
 /* Flex container for navigation indhold */
@@ -20,17 +21,15 @@ body {
     list-style-type: none;
 }
 
-/* Styling af links i navigationen */
-.navigation-container-forside ul li a {
-    font-family: Helvetica, sans-serif;
+.navigationspunkter li a {
     color: #ff9100;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
+    padding-left: 50px;
 }
 
-.navigation-container-forside ul li a:hover,
-.navigation-container-forside ul li a.active {
+.navigationspunkter li a:hover {
     color: #d4342b;
 }
 
@@ -65,11 +64,12 @@ body {
 .bliv-frivillig-knap {
     background-color: #93c7f3;
     color: #ffffff;
-    padding: 8px 15px;
+    padding: 5px 10px;
     font-size: 12px;
     border-radius: 20px;
     text-decoration: none;
 }
+
 
 /* Banner sektion */
 .banner {
@@ -77,11 +77,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: auto;
+    width: 1522px;
+    height: 458px;
 }
 
 .banner img {
     width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 
 .banner h1 {
@@ -127,7 +130,7 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: bold;
-}
+    }
 
 .laes-mere-knap:hover {
     background-color: #ff9100;
@@ -136,18 +139,15 @@ body {
 /* Container for handlinger med blå baggrund */
 .handlinger-container {
     background-color: #93c7f3; /* Blå baggrund */
-    padding: 40px 0;
+    padding: 0px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Flexbox layout for handlinger */
 .handlinger {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    justify-content: space-between;
 }
 
 /* Styling af individuelle handlingselementer */
@@ -170,7 +170,6 @@ body {
 .handling-element p{
     font-family: Helvetica;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
 }
 
@@ -197,6 +196,116 @@ body {
 
 .kald-til-handling-knap:hover {
     background-color: #ff9100;
+}
+
+
+/* Tilpasning for tablets (mellemstore skærme) */
+@media (max-width: 1199px) {
+    .navigation-container-forside {
+        flex-direction: column; /* Gør navigationen vertikal */
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .navigationspunkter {
+        flex-direction: column; /* Stack navigation links */
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .soegefelt {
+        width: 150px;
+    }
+
+    .banner {
+        width: 100%;
+        height: 300px;
+    }
+
+    .banner h1 {
+        font-size: 36px;
+    }
+
+    .hvem-er-vi h2 {
+        font-size: 36px;
+    }
+
+    .handling-element {
+        max-width: 250px;
+    }
+
+    .billede-frivillig, .billede-doner, .billede-test {
+        width: 100%; /* Billeder fylder hele elementets bredde */
+        height: auto;
+    }
+}
+
+/* Tilpasning for mobil (små skærme) */
+@media (max-width: 768px) {
+    .navigation-container-forside {
+        flex-direction: column;
+        align-items: flex-start; /* Juster for mobilvisning */
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .navigationspunkter {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .soegefelt {
+        width: 100%;
+    }
+
+    .bliv-frivillig-knap {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .banner {
+        height: 200px;
+    }
+
+    .banner h1 {
+        font-size: 24px;
+    }
+
+    .hvem-er-vi h2 {
+        font-size: 24px;
+    }
+
+    .hvem-er-vi p {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 16px;
+    }
+
+    .handlinger {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .handling-element {
+        max-width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .billede-frivillig, .billede-doner, .billede-test {
+        width: 100%;
+        height: auto;
+    }
+
+    .kald-til-handling-knap {
+        padding: 10px;
+        font-size: 16px;
+    }
 }
 
 
