@@ -92,7 +92,7 @@ header {
     background-color: #357ABD;
 }
 
-/* Banner sektion */
+    /* Banner sektion */
 .banner {
     position: relative;
     display: flex;
@@ -112,8 +112,11 @@ header {
     font-size: 48px;
     z-index: 1; /* Sørger for at tekst er over billedet */
 }
+    /* Banner sektion slut*/
 
-/* Hvem er vi sektion */
+
+
+    /* Hvem er vi sektion */
 .hvem-er-vi {
     display: flex;
     flex-direction: column;
@@ -152,8 +155,10 @@ header {
 .laes-mere-knap:hover {
     background-color: #ff9100;
 }
+    /* Hvem er vi sektion slut*/
 
-/* Handlinger sektion */
+
+    /* Handlinger sektion */
 .handlinger {
     display: flex;
     justify-content: space-around; /* Gør at elementerne bliver spredt ud */
@@ -185,17 +190,18 @@ header {
     font-size: 18px;
 }
 
+    /* Handlinger sektion slut*/
 
 
 
-/* JS-funktion på forsiden - billedslide */
+    /* JS-funktion på forsiden - billedslide */
 
 
 
-/* JS-funktion på forsiden - søgefunktion */
+    /* JS-funktion på forsiden - søgefunktion */
 
 
-/* CSS til frivillighed-siden */ 
+    /* CSS til frivillighed-siden */ 
 
 .frivillighedh1 { /* Mød en af vores frivillige*/
     text-align: center;
@@ -252,7 +258,10 @@ header {
     width: 300px; 
 }
 
-/* CSS til footeren */
+    /* CSS til frivillighed-siden slut*/ 
+
+
+    /* CSS til footeren */
 .footer {
     background-color: #93c7f3;
     
@@ -293,9 +302,10 @@ header {
     background-color: #6E95B6; 
     
 }
+    /* CSS til footeren slut*/
 
 
-/* CSS til quizzen */
+    /* CSS til quizzen */
 .quiz-tekst {
     text-align: center;
     font-size: large
@@ -319,6 +329,9 @@ header {
     background-color: #6E95B6;
     border-radius: 25px;
 }
+        /* CSS til quizzen slut*/
+
+
         /* CSS til tilmeldingsformular*/
 .tilmeld-body {
     font-family: Arial, sans-serif;
@@ -374,3 +387,4 @@ header {
     font-size: 14px;
 }
 
+        /* CSS til tilmeldingsformular slut*/
