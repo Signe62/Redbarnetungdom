@@ -333,13 +333,30 @@ body {
     margin-top: 150px;
 }
 
-.frivillighedbillede123 { /* De 3 første billeder i slideshowet */
-    display: flex;
-    justify-content: center; 
-    gap: 100px;
+/* CSS til billedeslide på frivillighedssiden */ 
+.slideshow-container { 
+    position: relative;
+    max-width: 100%;
+    margin: auto;
 }
 
-.frivillighedbillede1 { /* Billede af Løbeklubben */
+.slide {
+    justify-content: center; 
+    margin-left: 160px; 
+}
+
+.image-container {
+    display: inline-block;
+    width: 30%;  /* Hver billede vil optage 30% af containerens bredde */
+    margin: 0 5px;  /* Lidt afstand mellem billederne */
+    vertical-align: top;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);  /* Zoom lidt ind på billedet ved hover */
+}
+
+.frivillighedbilleder { /* Billede af Løbeklubben */
     height: 280px;
     width: 300px; 
 }
@@ -353,18 +370,32 @@ body {
 .frivillighedbroedtekst { /* Brødtekst til hvert af de 3 billeder */ 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    width: 300px; 
     margin-top: -30px;
-}
-
-.frivillighedbillede2 { /* Billede af Keramik */
-    height: 280px;
     width: 300px; 
 }
 
-.frivillighedbillede3 { /* Billede af barnets ven */
-    height: 280px;
-    width: 300px; 
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute; 
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+   
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
 }
     /* CSS til frivillighed-siden slut*/ 
 

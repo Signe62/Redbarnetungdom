@@ -6,6 +6,7 @@
     <title>Frivillighed</title>
     <link rel="stylesheet" href="style.css"> 
     <script src="quiz.js"></script>
+    <script src="frivillighedslideshow.js"></script> 
 
     <!-- Link til JavaScript-filen -->
     <script src="tilmeldingsformular.js"></script>  
@@ -35,27 +36,51 @@
     <h1 class="frivillighedh1">Mød en af vores frivillige</h1>
     <h2 class="frivillighedh2">Hør, hvordan det er at være frivillig hos Red Barnet Ungdom</h2>
 
+   
+   <!-- Billedeslide med 3 billeder -->
     <h3 class="frivillighedh3">Aktiviteter og events hos Red Barnet Ungdom</h3>
 
-    <section class="frivillighedbillede123">
-        <div class="frivillighedløbeklub">
-            <img src="img/loebeklub.jpg" alt="billede af en løbeklub" class="frivillighedbillede1">
-            <h5 class="frivillighedh5">RBU Løbeklub</h5> 
-            <p class="frivillighedbroedtekst">Vær med i Red Barnet Ungdoms nye løbeklub - løb for sjov, fællesskab og en god sag!</p>
+    <div class="slideshow-container">
+        <div class="slide"> <!-- De første 3 billeder som er i firvillighed slideshowet --> 
+            <div class="image-container">
+                <img src="img/loebeklub.jpg" alt="Billede af en løbeklub" class="frivillighedbilleder">
+                <h5 class="frivillighedh5">RBU Løbeklub</h5> 
+                <p class="frivillighedbroedtekst">Vær med i Red Barnet Ungdoms nye løbeklub - løb for sjov, fællesskab og en god sag!</p>
+            </div>
+            <div class="image-container">
+                <img src="img/frivillighedkeramik.jpg" alt="Keramik" class="frivillighedbilleder">
+                <h5 class="frivillighedh5">Keramik event</h5> 
+                <p class="frivillighedbroedtekst">Kom til vores keramik-event og støt Red Barnet Ungdom! Alt overskud fra salget går til en god sag!</p>
+            </div>
+            <div class="image-container">
+                <img src="img/barnetsven.jpg" alt="Barnets ven" class="frivillighedbilleder">
+                <h5 class="frivillighedh5">Barnets ven</h5>
+                <p class="frivillighedbroedtekst">Frivillige rollemodeller knyttes til et udsat barn og laver sjove aktiviteter sammen. De deltager også i fællesarrangementer med andre børn og rollemodeller.</p>
+            </div>
         </div>
-
-        <div class="frivillighedkeramik">
-            <img src="img/frivillighedkeramik.jpg" alt="keramik" class="frivillighedbillede2">
-            <h5 class="frivillighedh5">Keramik event</h5> 
-            <p class="frivillighedbroedtekst">Kom til vores keramik-event og støt Red Barnet Ungdom! Alt overskud fra salget går til en god sag!</p>
+        
+        <div class="slide"> <!-- De 3 næste billeder i frivillighed slideshowet --> 
+            <div class="image-container">
+                <img src="img/laeringoglektieven.jpg" alt="Laering og lektieven" class="frivillighedbilleder">
+                <h5 class="frivillighedh5">Læring og lektieven</h5>
+                <p class="frivillighedbroedtekst">Som lektieven støtter du børn i deres læring og giver dem lyst til at lære. Du gør lektier sjove og hjælper med at styrke deres selvtillid og faglige udvikling!</p>
+            </div>
+            <div class="image-container">
+                <img src="img/projektleder.jpg" alt="Projektleder" class="frivillighedbilleder">
+                <h5 class="frivillighedh5">Projektleder</h5>
+                <p class="frivillighedbroedtekst">Som projektleder hos Red Barnet Ungdom leder du frivillige, skaber meningsfulde projekter og gør en direkte forskel for børn og unge i Danmark.</p>
+            </div>
+            <div class="image-container">
+                <img src="img/weekendcamps.jpg" alt="Weekendscamps" class="frivillighedbilleder"> 
+                <h5 class="frivillighedh5">Weekendcamps</h5>
+                <p class="frivillighedbroedtekst">
+                    Som frivillig på weekendture giver du børn sjove oplevelser, fællesskab og et pusterum fra hverdagen. Gør en forskel ved at skabe minder, der varer.</p> 
+            </div>
         </div>
-
-        <div class="frivillighedbarnetsven">
-            <img src="img/barnetsven.jpg" alt="barnets ven" class="frivillighedbillede3">
-            <h5 class="frivillighedh5">Barnets ven</h5>
-            <p class="frivillighedbroedtekst">Frivillige rollemodeller knyttes til et udsat barn og laver sjove aktiviteter sammen. De deltager også i fællesarrangementer med andre børn og rollemodeller.</p>
-        </div>
-    </section>
+    
+        <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlides(1)">&#10095;</a>
+    </div>
 
     <h3 class="frivillighedh3">Hvilken type frivillighed passer bedst til dig?</h3>
 
