@@ -356,6 +356,7 @@ body {
 /* Overskrift */
 .tekst-ansoening h2 {
     font-size: 32px;
+    font-family: Merriweather;
     color: #ff9100;
     text-align: left;
     margin-bottom: 20px;
@@ -649,6 +650,7 @@ body {
 .kort-info h2 {
     font-size: 32px;
     color: #ff9100;
+    font-family: Merriweather;
     text-align: center;
     margin-top: 5px;
     margin-bottom: 20px;
