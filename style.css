@@ -311,6 +311,424 @@ body {
 
 
 
+/* Design for 'Boost din ansøgning" sektionen */
+.billede-og-tekst-ansoening {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 0; 
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    box-sizing: border-box;
+}
+
+/* Flex container til Boost din ansøgning sektion */
+.billede-tekst-container-ansoening {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1100px; 
+    margin: 0 auto;
+}
+
+.billede-ansoening {
+    flex: 1;
+    max-width: 50%; 
+    margin-right: 40px;
+}
+
+.billede-ansoening img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+.tekst-ansoening {
+    flex: 1;
+    max-width: 50%; 
+}
+
+/* Overskrift */
+.tekst-ansoening h2 {
+    font-size: 32px;
+    color: #ff9100;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+/* Brødtekst */
+.tekst-ansoening p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* Style for tekst container */
+.tekst-ansoening {
+    max-width: 600px;
+    text-align: left;
+}
+
+/* Knap container */
+.knap-container-ansoening {
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Styling af knappen */
+.btn-ansoening {
+    display: inline-block;
+    font-family: Helvetica;
+    font-weight: bold;
+    background-color: #D4342B;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effekt på knappen */
+.btn-ansoening:hover {
+    background-color: #ff9100;
+}
+
+/* Mobile Responsiveness - Media Query */
+@media (max-width: 768px) {
+    .billede-og-tekst-ansoening {
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+
+    .billede-tekst-container-ansoening {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .billede-ansoening {
+        width: 100%;
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .billede-ansoening img {
+        width: 100%;
+        height: auto;
+    }
+
+    .tekst-ansoening {
+        width: 100%;
+        text-align: left;
+        padding: 0 15px;
+    }
+
+    .tekst-ansoening h2 {
+        font-size: 28px;
+        text-align: left;
+    }
+
+    .tekst-ansoening p {
+        font-size: 16px;
+        text-align: left;
+        margin: 0 0 20px 0;
+    }
+
+    .knap-container-ansoening {
+        margin-top: 15px;
+    }
+
+    .btn-ansoening {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}
+
+
+/* Design for Slideshow sektionen */
+.nyheder-overskrift {
+    text-align: center;
+    font-family: Merriweather;
+}
+
+/* Slideshow overskrift */
+.nyheder-overskrift h1 {
+    font-size: 32px; 
+    color: #ff9100;
+    margin: 0; 
+    font-weight: bold;
+}
+
+.nyheder-overskrift p {
+    font-size: 25px;
+    color: black; 
+    margin: 15px 0;
+}
+
+/* Design for slideshowet */
+.slideshow-container {
+    max-width: 1100px;
+    position: relative;
+    margin: auto;
+    overflow: visible; /* Gør at pilene er uden for billedet */
+}
+
+/* Styling af hvert enkelt slide */
+.mySlides {
+    display: none; /* Skjuler alle slides, indtil de er aktive */
+    position: relative;
+}
+
+
+/* Styling af teksten under billedet */
+.text-under {
+    color: #333;
+    font-size: 18px;
+    padding: 10px 0;
+    text-align: left;
+    background-color: white; 
+    margin-top: 0;
+    margin-left: 0;
+}
+
+/* Design af pile */
+.venstre-pil, .hoejere-pil {
+    cursor: pointer;
+    position: absolute;
+    top: 50%; /* Sikrer, at pilene er i midten */
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    user-select: none;
+    z-index: 1; 
+    transition: border-color 0.6s ease; 
+    opacity: 0.5; /* Fade effekt */
+}
+
+/* Venstre pil */
+.venstre-pil {
+    border-width: 30px 50px 30px 0; 
+    border-color: transparent gray transparent transparent;
+    left: -80px; /* Skubber pilen længere væk fra billedet */
+}
+
+/* Højre pil */
+.hoejere-pil {
+    border-width: 30px 0 30px 50px;
+    border-color: transparent transparent transparent gray;
+    right: -80px; /* Skubber pilen længere væk fra billedet */
+}
+
+/* Hover på pilene */
+.venstre-pil:hover, .hoejere-pil:hover {
+    opacity: 1; 
+}
+
+/* Når pilen bliver trykket på */
+.venstre-pil:active, .hoejere-pil:active {
+    animation: fade 0.6s; /* Fade animation */
+}
+
+/* Cirklerne under slideshowet */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Når Cirklerne er aktive */
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fade på cirklerne */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .slideshow-container {
+        max-width: 100%; 
+        padding: 0 20px; 
+    }
+
+    /* Skjul pilene på mobilversion */
+    .venstre-pil, .hoejere-pil {
+        display: none; /* Skjuler pilene */
+    }
+
+    .dot {
+        height: 10px;
+        width: 10px;
+    }
+
+    .nyheder-overskrift h1 {
+        font-size: 24px;
+    }
+
+    .nyheder-overskrift p {
+        font-size: 18px; 
+    }
+
+    .tekst-under {
+        font-size: 16px;
+    }
+}
+
+
+/* Design for 'Find os her'-sektionen */
+.find-os {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 150px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Flex container for billede og tekst indhold */
+.kort-og-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Styling af kortsektionen */
+.kort {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+.kort img {
+    width: 100%;
+    height: auto;
+}
+
+/* Styling af teksten ved siden af billedet */
+.kort-info {
+    flex: 1;
+    max-width: 45%;
+}
+
+/* Styling af overskriften */
+.kort-info h2 {
+    font-size: 32px;
+    color: #ff9100;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+/* Styling af brødteksten */
+.kort-info p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+/* Styling af ikonerne */
+.ikon-liste-kort {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+/* Styling af hvert listeelement i ikon sektionen */
+.ikon-liste-kort li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+    font-size: 20px;
+    color: #000000;
+}
+
+/* Styling af ikonerne i listen */
+.ikon-liste-kort li img {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+}
+
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .find-os {
+        padding: 60px 20px;
+    }
+
+    .kort-og-info {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .kort {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .kort-info {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .kort-info h2 {
+        font-size: 28px;
+    }
+
+    .kort-info p {
+        font-size: 16px;
+        text-align: left; 
+        margin-bottom: 30px;
+    }
+
+    .ikon-liste-kort li {
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .ikon-liste-kort li img {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }
+
+    .ikon-liste-kort li {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
     /* CSS til frivillighed-siden */ 
 .frivillighedh1 { /* Mød en af vores frivillige*/
     text-align: center;
