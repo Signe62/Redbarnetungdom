@@ -731,12 +731,6 @@ body {
 
 
 
-
-
-
-
-
-
     /* CSS til frivillighed-siden */ 
 .frivillighedh1 { /* Mød en af vores frivillige*/
     text-align: center;
@@ -977,3 +971,14 @@ body {
     font-size: 14px;
 }
     /* CSS til tilmeldingsformular slut*/
+
+
+/*CSS til video*/
+.video-container {
+    display: flex;
+    justify-content: center; /* Centrerer videoen horisontalt */
+    align-items: center; /* Centrerer videoen vertikalt */
+    height: 100vh; /* Fylder hele browserens højde, så den centrerer i midten af siden */
+}
+    
+
