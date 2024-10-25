@@ -356,6 +356,7 @@ body {
 /* Overskrift */
 .tekst-ansoening h2 {
     font-size: 32px;
+    font-family: Merriweather;
     color: #ff9100;
     text-align: left;
     margin-bottom: 20px;
