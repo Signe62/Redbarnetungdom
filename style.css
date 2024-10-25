@@ -22,10 +22,10 @@ body {
 }
 
 .navigationspunkter li a {
-    color: #ff9100;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
     padding-left: 50px;
 }
 
