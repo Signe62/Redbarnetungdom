@@ -1,8 +1,8 @@
 // Opret et array af objekter for hvert slide
 const slidesData = [
-    { image: "images/b1.png", description: "Event: Keramik Event hvor overskuddet går til Red Barnet Ungdom" },
-    { image: "images/b2.png", description: "Event: Løb med os og støt Red Barnet Ungdom!" },
-    { image: "images/b3.png", description: "Event: Kom til loppemarked og støt Red Barnet Ungdom!" }
+    { image: "img/billedeslidekeramik.jpg", description: "Event: Keramik Event hvor overskuddet går til Red Barnet Ungdom" },
+    { image: "img/billedeslidelubeklub.jpg", description: "Event: Løb med os og støt Red Barnet Ungdom!" },
+    { image: "img/billedeslideloppemarked.jpg", description: "Event: Kom til loppemarked og støt Red Barnet Ungdom!" }
 ];
 
 let slideIndex = 1;
@@ -23,24 +23,28 @@ function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
-    
-    if (n > slidesData.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slidesData.length}
-    
+
+    // Hvis slideIndex er større end antallet af slides, nulstilles det til første slide
+    if (n > slidesData.length) { slideIndex = 1; }    
+    if (n < 1) { slideIndex = slidesData.length; }
+
+    // Skjuler alle slides
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
     }
     
+    // Fjerner 'active' fra alle prikker
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
     
-    // Opdater slide-indhold dynamisk fra objekterne
-    slides[0].innerHTML = `
-        <img src="${slidesData[slideIndex-1].image}" style="width:100%">
-        <div class="text-under">${slidesData[slideIndex-1].description}</div>
+    // Opdaterer det aktuelle slide baseret på `slideIndex`
+    slides[slideIndex - 1].innerHTML = `
+        <img src="${slidesData[slideIndex - 1].image}" style="width:100%">
+        <div class="text-under">${slidesData[slideIndex - 1].description}</div>
     `;
 
-    slides[0].style.display = "block";  
-    dots[slideIndex-1].className += " active";
+    // Viser den aktuelle slide og tilføjer 'active' til den tilhørende prik
+    slides[slideIndex - 1].style.display = "block";  
+    dots[slideIndex - 1].className += " active";
 }
