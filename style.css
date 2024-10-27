@@ -816,7 +816,6 @@ body {
     font-weight: bold;
     font-size: 18px;
     border-radius: 0 3px 3px 0;
-   
 }
 
 .next {
@@ -910,13 +909,12 @@ body {
 }
     /* CSS til quizzen slut*/
 
-
     /* CSS til tilmeldingsformular*/
 .tilmeld-body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .tilmeld-container {
@@ -984,11 +982,10 @@ body {
 
 
 /*CSS til video*/
-.video-container {
-    display: flex;
-    justify-content: center; /* Centrerer videoen horisontalt */
-    align-items: center; /* Centrerer videoen vertikalt */
-    height: 100vh; /* Fylder hele browserens højde, så den centrerer i midten af siden */
+video {
+display: block;
+margin: auto;
 }
+
     
 
