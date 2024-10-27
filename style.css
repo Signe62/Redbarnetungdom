@@ -880,9 +880,27 @@ body {
 
 
     /* CSS til quizzen */
+    .progress-container {
+    width: 50%;
+    background-color: #93c7f3;
+    border-radius: 10px;
+    margin: 40px 0;
+    display: block;
+    margin: auto;
+}
+    
+    .progress-bar {
+    width: 0%;
+    height: 12px;
+    background-color: #6E95B6;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .quiz-tekst {
     text-align: center;
-    font-size: large
+    font-size: large;
 }
 
 .question {
@@ -890,22 +908,8 @@ body {
     text-align: center;
 }
 
-.active {
+.activeq {
     display: block;
-}
-
-.progress-container {
-    width: 50%;
-    background-color: #93c7f3;
-    border-radius: 10px;
-    margin: 40px 0;
-}
-
-.progress-bar {
-    width: 0%;
-    height: 12px;
-    background-color: #6E95B6;
-    border-radius: 25px;
 }
     /* CSS til quizzen slut*/
 
