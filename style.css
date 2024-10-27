@@ -64,7 +64,7 @@ body {
 /* Knap til at blive frivillig */
 .bliv-frivillig-knap {
     background-color: #93c7f3;
-    color: #ffffff;
+    color: #000000;
     padding: 8px 16px;
     font-size: 15px;
     border-radius: 20px;
