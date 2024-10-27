@@ -29,13 +29,13 @@ function updateProgressBar(questionNumber) {
 }
 
 function showNextQuestion(questionNumber) {
-    document.getElementById(`question${currentQuestion}`).classList.remove('active');
-    document.getElementById(`question${questionNumber}`).classList.add('active');
+    document.getElementById(`question${currentQuestion}`).classList.remove('activeq');
+    document.getElementById(`question${questionNumber}`).classList.add('activeq');
     currentQuestion = questionNumber;
 }
 
 function showResult() {
-    document.getElementById(`question${currentQuestion}`).classList.remove('active');
+    document.getElementById(`question${currentQuestion}`).classList.remove('activeq');
     document.getElementById('result').style.display = 'block';
 
     let sortedAnswers = Object.keys(answers).sort((a, b) => answers[b] - answers[a]);

@@ -911,6 +911,15 @@ body {
 .activeq {
     display: block;
 }
+
+#result {
+    text-align: center;
+}
+
+#result-text {
+    text-align: center;
+}
+
     /* CSS til quizzen slut*/
 
     /* CSS til tilmeldingsformular*/
