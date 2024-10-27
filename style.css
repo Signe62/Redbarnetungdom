@@ -934,6 +934,13 @@ body {
     line-height: 25px;
 }
 
+.question div, #result div {
+    display: flex;
+    justify-content: center;
+}
+
+.tilbageknap
+
     /* CSS til quizzen slut*/
 
     /* CSS til tilmeldingsformular*/

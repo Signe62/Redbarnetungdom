@@ -5,17 +5,17 @@ let answers = {
 };
 
 let currentQuestion = 1;
-const totalQuestions = 3;  // Total number of questions
+const totalQuestions = 3;
 
 function answerQuestion(questionNumber, answer) {
-    // Increment the selected answer
+    // Tæl svar
     answers[answer]++;
     console.log(`Answered question ${questionNumber}: ${answer}`);
 
-    // Update progress bar
+    // Opdater progress bar
     updateProgressBar(questionNumber);
 
-    // Move to the next question or show result
+    // Gå til næste spørgsmål eller vis resultatet
     if (questionNumber < totalQuestions) {
         showNextQuestion(questionNumber + 1);
     } else {
@@ -29,25 +29,51 @@ function updateProgressBar(questionNumber) {
 }
 
 function showNextQuestion(questionNumber) {
-    document.getElementById(`question${currentQuestion}`).classList.remove('activeq');
+    // Skjul alle spørgsmål og vis kun det aktuelle
+    for (let i = 1; i <= totalQuestions; i++) {
+        document.getElementById(`question${i}`).classList.remove('activeq');
+    }
     document.getElementById(`question${questionNumber}`).classList.add('activeq');
     currentQuestion = questionNumber;
 }
 
+function showPreviousQuestion(questionNumber) {
+    document.getElementById(`question${currentQuestion}`).classList.remove('activeq');
+    document.getElementById(`question${questionNumber}`).classList.add('activeq');
+    currentQuestion = questionNumber;
+    updateProgressBar(questionNumber - 1);
+}
+
+function goBack() {
+    if (currentQuestion > 1) {
+        showPreviousQuestion(currentQuestion - 1);
+    }
+}
+
 function showResult() {
+    // Skjul sidste spørgsmål og vis resultat
     document.getElementById(`question${currentQuestion}`).classList.remove('activeq');
     document.getElementById('result').style.display = 'block';
 
+    // Sortér svarene for at finde den højeste score
     let sortedAnswers = Object.keys(answers).sort((a, b) => answers[b] - answers[a]);
 
-    // Show multiple results if all answers are different
-    if (answers[sortedAnswers[0]] === 1 && answers[sortedAnswers[1]] === 1 && answers[sortedAnswers[2]] === 1) {
+    // Tjek om alle svar er ens
+    let allEqual = true;
+    for (let i = 1; i < sortedAnswers.length; i++) {
+        if (answers[sortedAnswers[i]] !== answers[sortedAnswers[0]]) {
+            allEqual = false;
+            break;
+        }
+    }
+
+    if (allEqual) {
         showMultipleResults();
     } else {
         showSingleResult(sortedAnswers[0]);
     }
 
-    // Set progress bar to 100% on result
+    // Sæt progress bar til 100%
     updateProgressBar(totalQuestions);
 }
 
@@ -71,6 +97,17 @@ function getResultText(result) {
         case 'crisis':
             return 'At hjælpe børn på krisecentre. Her vil du være med til at give børn der bor på krisecentre et frirum og et meningsfuldt fællesskab.';
         default:
-            return ''; // No log for unknown results
+            return '';
     }
+}
+
+function restartQuiz() {
+    // Nulstil svar
+    answers = { running: 0, learning: 0, crisis: 0 };
+    currentQuestion = 1;
+    
+    // Skjul resultatet og vis første spørgsmål
+    document.getElementById('result').style.display = 'none';
+    showNextQuestion(1);
+    updateProgressBar(0);
 }
