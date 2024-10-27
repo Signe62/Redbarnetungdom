@@ -912,12 +912,27 @@ body {
     display: block;
 }
 
+.question button {
+    margin: 5px;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.question button:hover {
+    background-color: rgb(215, 215, 215);
+}
+
 #result {
     text-align: center;
 }
 
 #result-text {
     text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 25px;
 }
 
     /* CSS til quizzen slut*/
