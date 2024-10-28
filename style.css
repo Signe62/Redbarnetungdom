@@ -1140,19 +1140,21 @@ object-fit: cover;
     color: #ff9100;
     text-align: center;
     margin-top: 100px;
+    margin-bottom: 20px;
 }
 
 .donér p{
-    size: 20px;
+    size: 25px;
     font-family: Merriweather;
     font-weight: 500;
     color: #000000;
     text-align: center;
     margin-left: 300px;
     margin-right: 300px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
-.mobilepay img {
-    size: 50px;
+.donér img {
+margin-left: 600px;
+margin-bottom: 100px;
 }
