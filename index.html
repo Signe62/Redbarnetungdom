@@ -4,66 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Red Barnet Ungdom</title>
+    <!-- Link til CSS-fil for styling -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header med navigation -->
     <header>
         <nav class="navigation-container-forside">
-            <div class="navigation-indhold">
-                <ul class="navigationspunkter"> 
-                    <img src="img/logo.png" alt="LOGO" class="logo">
-                    <li><a class="nav-knapper" href="index.html">FORSIDE</a></li>
-                    <li><a class="nav-knapper" href="frivillighed.html">FRIVILLIGHED</a></li>
-                    <li><a class="nav-knapper" href="doner.html">DONÈR</a></li>
-                    <li><a class="nav-knapper" href="#">OM OS</a></li>
-                    <li><a class="nav-knapper" href="#">KONTAKT</a></li>
-                    <li>
-                        <input type="text" id="soegefelt" class="soegefelt" placeholder="Skriv dit søgeord her...">
-                        <button onclick="search()" class="soegeknap">Søg</button>
-                    </li>
-                    <li><a href="blivfrivillig.html" class="bliv-frivillig-knap">Bliv frivillig</a></li>
-                </ul>
-            </div>
+            <ul class="navigationspunkter">
+                <!-- Logo i navigationen -->
+                <li class="logo"><img src="img/logo.png" alt="LOGO"></li>
+                <!-- Navigation links -->
+                <li><a class="nav-knapper" href="index.html">FORSIDE</a></li>
+                <li><a class="nav-knapper" href="frivillighed.html">FRIVILLIGHED</a></li>
+                <li><a class="nav-knapper" href="doner.html">DONÈR</a></li>
+                <li><a class="nav-knapper" href="#">OM OS</a></li>
+                <li><a class="nav-knapper" href="#">KONTAKT</a></li>
+                <!-- Søgefelt og søgeknap -->
+                <li class="soegefelt-container">
+                    <input type="text" id="soegefelt" class="soegefelt" placeholder="Skriv dit søgeord her...">
+                    <button onclick="search()" class="soegeknap">Søg</button>
+                </li>
+                <!-- Knap til frivillig tilmelding -->
+                <li><a href="blivfrivillig.html" class="bliv-frivillig-knap">Bliv frivillig</a></li>
+            </ul>
         </nav>
     </header>
 
+    <!-- Bannersektion med billede og hovedoverskrift -->
     <section class="banner">
         <img src="img/group.jpg" alt="Sammenhold">
         <h1>RED BARNET UNGDOM</h1>
     </section>
 
+    <!-- Sektion om organisationen -->
     <section class="hvem-er-vi">
         <h2>Hvem er Red Barnet Ungdom?</h2>
-        <p>Red Barnet Ungdom er ungdomsafdelingen af Red Barnet, som er en international humanitær organisation, der arbejder for at sikre børns rettigheder og trivsel. Red Barnet Ungdom fokuserer særligt på at skabe bedre vilkår for udsatte børn og unge i Danmark gennem frivillige indsatser.
-            De arrangerer aktiviteter som lektiehjælp, venskabsgrupper og mentorforløb for at støtte børn, der har brug for ekstra hjælp i deres dagligdag. Organisationen arbejder for at sikre, at alle børn får mulighed for en tryg opvækst og lige adgang til uddannelse og sociale fællesskaber.</p>
+        <p>Red Barnet Ungdom er ungdomsafdelingen af Red Barnet, som er en international humanitær organisation, der arbejder for at sikre børns rettigheder og trivsel. Red Barnet Ungdom fokuserer særligt på at skabe bedre vilkår for udsatte børn og unge i Danmark gennem frivillige indsatser. De arrangerer aktiviteter som lektiehjælp, venskabsgrupper og mentorforløb for at støtte børn, der har brug for ekstra hjælp i deres dagligdag. Organisationen arbejder for at sikre, at alle børn får mulighed for en tryg opvækst og lige adgang til uddannelse og sociale fællesskaber.</p>
+        <!-- Knap til at læse mere -->
         <button class="laes-mere-knap">Læs mere</button>
     </section>
 
-    <!-- Handlinger sektion ved blå baggrundsboks -->
+    <!-- Sektion for handlinger med blå baggrund -->
     <section class="handlinger-container">
         <div class="handlinger">
+            <!-- Handling 1: Bliv frivillig -->
             <article class="handling-element">
                 <img src="img/hander.jpg" alt="Bliv frivillig" class="billede-frivillig">
                 <h3>Bliv frivillig</h3>
-                <p>Kom og vær frivillig i Red Barnet Ungdom og bliv en del af et stort fællesskab blandt unge. </p>
-                <a href="frivillighed.html" class="kald-til-handling-knap">Bliv frivillig</a>
+                <p>Kom og vær frivillig i Red Barnet Ungdom og bliv en del af et stort fællesskab blandt unge.</p>
+                <div class="knap-container">
+                    <!-- Knap til frivilligt engagement -->
+                    <a href="#" class="kald-til-handling-knap">Bliv frivillig</a>
+                </div>
             </article>
+
+            <!-- Handling 2: Donér -->
             <article class="handling-element">
                 <img src="img/indsamling.jpg" alt="Donér" class="billede-doner">
                 <h3>Støt en god sag</h3>
                 <p>Donér et enkelt eller månedligt beløb, og hjælp danske børn og unge med at sikre deres rettigheder.</p>
-                <a href="doner.html" class="kald-til-handling-knap">Donér</a>
+                <div class="knap-container">
+                    <!-- Knap til donation -->
+                    <a href="#" class="kald-til-handling-knap">Donér</a>
+                </div>
             </article>
+
+            <!-- Handling 3: Find hvad der passer til dig -->
             <article class="handling-element">
                 <img src="img/test.jpg" alt="Find hvad der passer til dig" class="billede-test">
                 <h3>Hvad passer til dig?</h3>
-                <p>Tag vores test og opdag, hvilken type frivilligt arbejde der passer bedst til dig. </p>
-                <a href="frivillighed.html" class="kald-til-handling-knap">Tag testen her!</a>
+                <p>Tag vores test og opdag, hvilken type frivilligt arbejde der passer bedst til dig.</p>
+                <div class="knap-container">
+                    <!-- Knap til test -->
+                    <a href="#" class="kald-til-handling-knap">Tag testen her!</a>
+                </div>
             </article>
         </div>
     </section>
+    <!-- Her slutter Signes kode -->
 
-
+    <!-- Her starter Amalies kode -->
     <!-- Boost din ansøgning sektion -->
     <section class="billede-og-tekst-ansoening">
         <div class="billede-tekst-container-ansoening">
@@ -84,18 +105,15 @@
 
     <!-- Knap ved Boost din ansøgning sektion -->
     <div class="knap-container-ansoening">
-        <a href="frivillighed.html" class="btn-ansoening">Bliv frivillig</a>
+        <a href="#" class="btn-ansoening">Bliv frivillig</a>
     </div>
     </div>
 
     </section>
 
-
-
-
     <!-- NYHEDER sektion -->
     <section class="nyheder-overskrift">
-        <h1>NYHEDER</h1>
+        <h1>Nyheder</h1>
         <p>Kom med ind i vores fællesskab </p>
     </section>
 
@@ -170,8 +188,9 @@
     </section>
 
     <script src="billedeslide.js" defer></script>
+<!--Amalies kode slut-->
 
-
+<!--footer af Sophie-->
     <footer class="footer">
         <div class="footercontent">
             <div class="sektion1">
@@ -183,20 +202,10 @@
 
             <div class="sektion2">
                 <p><strong>Lokalforeninger</strong></p>
-
-            <ul class="liste"> 
-                <li>Aarhus</li>
-                <li>Esbjerg</li>
-                <li>Fyn</li>
-                <li>København Nord</li>
-                <li>København Syd</li>
-                <li>Køge</li>
-                <li>Midtsjælland</li>
-                <li>Nordsjælland</li>
-                <li>Randers</li>
-                <li>Slagelse</li>
-                <li>Vejle</li>
-            </ul>
+                <ul class="liste"> 
+                    <li>Aarhus</li><li>Esbjerg</li><li>Fyn</li><li>København Nord</li><li>København Syd</li>
+                    <li>Køge</li><li>Midtsjælland</li><li>Nordsjælland</li><li>Randers</li><li>Slagelse</li><li>Vejle</li>
+                </ul>
             </div> 
 
             <div class="sektion3">
@@ -204,28 +213,16 @@
                 <p>Bliv frivillig</p>
                 <p>Donér</p>  
             </div>
-
-            </div>
         </div>
 
         <div class="footercontent2">
-            <a href="https://www.linkedin.com/company/red-barnet-ungdom/" target="_blank"> 
-                <img src="img/linkedinlogo.png" alt="Linkedin logo" class="socialemedierlogo"> 
-            </a>
-
-            <a href="https://www.instagram.com/redbarnetungdom/" target="_blank"> 
-                <img src="img/instagramlogo.png" alt="Instagram logo" class="socialemedierlogo"> 
-            </a>
-
-            <a href="https://www.facebook.com/redbarnetungdom" target="_blank">
-                <img src="img/facebooklogo.png" alt="Facebook logo" class="socialemedierlogo"> 
-            </a>
-
-            <a href="" target="_blank">
-                <img src="img/tiktoklogo.png" alt="Tiktoklogo" class="socialemedierlogo"> 
-            </a>
-             
+            <a href="https://www.linkedin.com/company/red-barnet-ungdom/" target="_blank"><img src="img/linkedinlogo.png" alt="Linkedin logo" class="socialemedierlogo"></a>
+            <a href="https://www.instagram.com/redbarnetungdom/" target="_blank"><img src="img/instagramlogo.png" alt="Instagram logo" class="socialemedierlogo"></a>
+            <a href="https://www.facebook.com/redbarnetungdom" target="_blank"><img src="img/facebooklogo.png" alt="Facebook logo" class="socialemedierlogo"></a>
+            <a href="#" target="_blank"><img src="img/tiktoklogo.png" alt="Tiktok logo" class="socialemedierlogo"></a>
+        </div>
     </footer> 
 
 </body>
 </html>
+
