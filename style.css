@@ -732,54 +732,6 @@ body {
     }
 }
 
-    /* CSS til footeren */
-    .footer {
-        background-color: #93c7f3;
-        position: absolute;
-        width: 100%;        
-    }
-    
-    .footercontent {
-        display: flex;
-        gap: 200px;
-        margin-left: 200px;
-    }
-    
-    .sektion1 { 
-        font-family: Arial, Helvetica, sans-serif; 
-    
-    }
-    
-    .liste li { 
-        margin-bottom: 5px;
-        list-style-type: none; 
-          
-    } 
-    
-    .sektion3 {
-        margin-left: 70px;
-    }
-    
-    .footercontent2 {
-        display: flex; 
-        gap: 15px;
-        justify-content: flex-end;
-        margin-right: 50px;
-        margin-top: -50px;
-    }
-    .socialemedierlogo {
-        height: 40px;
-        width: 40px; 
-    }
-    
-    .copy {
-        font-family: Arial, Helvetica, sans-serif; 
-        text-align: center;
-        color: lightgrey;
-        background-color: #6E95B6;   
-    }
-    /* CSS til footeren slut*/
-
 
 /* CSS til frivillighed-siden */ 
 .frivillighedh1 { /* Mød en af vores frivillige*/
