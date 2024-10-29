@@ -24,6 +24,8 @@ body {
 
 .logo img {
     width: 100px;
+    margin-left: 10px;
+    margin-right: 60px;
 }
 
 .nav-knapper {
@@ -224,6 +226,8 @@ body {
     }
     .logo img {
         width: 80px;
+        margin-left: 0px;
+        margin-right: 0px
     }
 
     .banner img {
