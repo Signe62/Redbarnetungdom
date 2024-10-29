@@ -1046,108 +1046,130 @@ margin: auto;
     margin-right: 250px;
 }
 
+/* Banner styling */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.banner-content {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
 .donation-img {
-width: 100vw;
-height: auto;
-object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;               /* Billedet dækker hele bannerets område */
 }
 
-.donér h2{
-    font-size: 40px;
-    font-family: Merriweather;
-    font-weight: 600;
-    color: #ff9100;
+.banner h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrering af teksten */
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+/* Grundlæggende styling */
+.donér {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
-    margin-top: 50px;
 }
 
-.donér h3{
-    font-size: 40px;
-    font-family: Merriweather;
-    font-weight: 600;
+/* Header sektion styling */
+.donér-header h2,
+.donér-header h3 {
+    font-size: 30px;
     color: #ff9100;
-    text-align: center;
-    margin-top: 500px;
+    margin-bottom: 200px;
 }
 
-.donér h4{
-    font-size: 40px;
-    font-family: Merriweather;
-    font-weight: 600;
+.donér-støtte h4, .donér-info h5, .donér-info h6{
+    font-size: 30px;
     color: #ff9100;
-    text-align: center;
-    margin-top: 500px;
 }
 
-.donér h5{
-    font-size: 40px;
-    font-family: Merriweather;
-    font-weight: 600;
-    color: #ff9100;
-    text-align: center;
-    margin-top: 100px;
+.donér-info p{
+    font-size: 15px;
+    color: #000000;
+    margin-left: 90px;
+    margin-left: 90px;
+    font-weight: 550;
 }
 
-.månedligt-bidrag-button {
-    color: #ffffff;
-    font-family: Helvetica, sans-serif;
-    font-size: 18px;
+/* Støtte valg og knapper */
+.donér-støtte {
+    margin: 20px 0;
+}
+
+.donér-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.månedligt-bidrag-button,
+.enkelt-bidrag-button {
     background-color: #d4342b;
+    color: white;
+    font-family: Helvetica, sans-serif;
     padding: 10px 20px;
-    border: none;
     border-radius: 20px;
-    cursor: pointer;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 500px;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
     font-weight: bold;
 }
 
-.månedligt-bidrag-button:hover {
-    background-color: #96251f;
-}
-
-.enkelt-bidrag-button{
-    color: #ffffff;
-    font-family: Helvetica, sans-serif;
-    font-size: 18px;
-    background-color: #d4342b;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 80px;
-    font-weight: bold; 
-}
-
+.månedligt-bidrag-button:hover,
 .enkelt-bidrag-button:hover {
     background-color: #96251f;
 }
 
-.donér h6{
-    font-size: 40px;
-    font-family: Merriweather;
-    font-weight: 600;
-    color: #ff9100;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 20px;
+/* Information sektion styling */
+.donér-info {
+    margin: 20px 0;
 }
 
-.donér p{
-    size: 25px;
-    font-family: Merriweather;
-    font-weight: 500;
-    color: #000000;
-    text-align: center;
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-bottom: 50px;
+/* Billede sektion styling */
+.donér-billede img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.donér img {
-margin-left: 600px;
-margin-bottom: 100px;
+/* Responsiv tilpasning til tablet og mobil */
+@media (max-width: 1023px) {
+    .donér-buttons {
+        flex-direction: column;    /* Stabler knapper på mindre skærme */
+        gap: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .donér {
+        padding: 15px;
+    }
+    
+    .donér-info p {
+        font-size: 14px;           /* Mindre tekst på mobil */
+    }
+
+    .donér-billede img {
+        margin-top: 10px;
+    }
 }
