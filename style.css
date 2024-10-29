@@ -961,6 +961,15 @@ display: block;
 margin: auto;
 }
 
+/* Smartphone: 767px and below */
+@media (max-width: 767px) {
+    video {
+        width: 100%; /* Fuld bredde for smartphones */
+        height: auto; /* Beholder højden proportional */
+    }
+}
+
+
 .tilmeld-h1 {
     font-size: 32px;
     font-family: Merriweather;
