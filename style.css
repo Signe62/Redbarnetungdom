@@ -848,7 +848,7 @@ body {
         font-size: 12px;
     }
 }
- /* CSS til footeren slut*/
+/* CSS til footeren slut*/
 
 
 /* CSS til quizzen */
@@ -1024,7 +1024,7 @@ body {
 }
 
 .tilmeld-button:hover {
-    background-color: #96251f;
+    background-color: #ff9100;
 }
 
 /* Fejlmeddelelser */
@@ -1178,7 +1178,7 @@ video {
 }
 
 .stoette-knap {
-    background-color: #c44d36;
+    background-color: #d4342b;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -1190,7 +1190,7 @@ video {
 }
 
 .stoette-knap:hover {
-    background-color: #a73e2b;
+    background-color: #ff9100;
 }
 
 .stoette-container h3 {
