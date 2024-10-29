@@ -993,6 +993,32 @@ margin: auto;
     margin-right: 250px;
 }
 
+.tilmeld-h4 {
+    font-size: 18px;
+    font-family: Merriweather;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 250px; /* Standard margin for desktop */
+    margin-right: 250px; /* Standard margin for desktop */
+}
+
+/* Tablet: 768px - 1023px */
+@media (max-width: 1023px) {
+    .tilmeld-h4 {
+        margin-left: 50px; /* Juster margen for tablet */
+        margin-right: 50px; /* Juster margen for tablet */
+    }
+}
+
+/* Smartphone: 767px and below */
+@media (max-width: 767px) {
+    .tilmeld-h4 {
+        margin-left: 20px; /* Juster margen for smartphones */
+        margin-right: 20px; /* Juster margen for smartphones */
+    }
+}
 
 
 
