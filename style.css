@@ -1010,133 +1010,193 @@ margin: auto;
     margin-right: 250px;
 }
 
-/* Banner styling */
-.banner {
+
+
+
+/* CSS til "Doner"-siden */
+/* Generelle stilarter */
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+/* Navigation */
+.navigationspunkter {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.navigationspunkter li {
+    margin: 0 15px;
+}
+
+.navigation-container-forside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.nav-knapper {
+    color: #ff9100;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav-knapper:hover {
+    color: #d4342b;
+}
+
+/* Søgefelt */
+.soegefelt {
+    padding: 8px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 180px;
+}
+
+.soegeknap {
+    padding: 8px 16px;
+    font-size: 15px;
+    background-color: grey;
+    border: none;
+    color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.soegeknap:hover {
+    background-color: #ff9100;
+}
+
+/* Bliv frivillig knap */
+.bliv-frivillig-knap {
+    background-color: #93c7f3;
+    color: #ffffff;
+    padding: 8px 16px;
+    font-size: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.bliv-frivillig-knap:hover {
+    color: #d4342b;
+}
+
+/* Banner sektion */
+.doner-banner {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.doner-banner img {
+    height: 500px;
     position: relative;
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-}
-
-.banner-content {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.donation-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;               /* Billedet dækker hele bannerets område */
-}
-
-.banner h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centrering af teksten */
-    font-size: 48px;
-    font-weight: bold;
-    color: #fff;
-    margin: 0;
-}
-
-/* Grundlæggende styling */
-.donér {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-/* Header sektion styling */
-.donér-header h2,
-.donér-header h3 {
-    font-size: 30px;
-    font-family: Merriweather;
-    color: #ff9100;
-    margin-bottom: 200px;
-}
-
-.donér-støtte h4, .donér-info h5, .donér-info h6{
-    font-size: 30px;
-    color: #ff9100;
-    font-family: Merriweather;
-}
-
-.donér-info p{
-    font-size: 15px;
-    color: #000000;
-    font-family: Merriweather;
-    margin-left: 90px;
-    margin-left: 90px;
-    font-weight: 550;
-}
-
-/* Støtte valg og knapper */
-.donér-støtte {
-    margin: 20px 0;
-}
-
-.donér-buttons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
 }
 
-.månedligt-bidrag-button,
-.enkelt-bidrag-button {
-    background-color: #d4342b;
-    color: white;
-    font-family: Merriweather;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 18px;
+.doner-banner h1 {
+    position: absolute;
+    color: #ffffff;
+    font-size: 48px;
+    font-family: 'Merriweather', serif;
+}
+
+/* Beregner sektion */
+.doner-beregner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0;
+}
+
+.doner-beregner-container h1 {
+    color: #ff9100;
+    font-size: 36px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
     text-align: center;
-    display: inline-block;
+}
+
+.doner-beregner-boks {
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.doner-beregner-boks label {
+    color: #000;
+    font-size: 24px;
     font-weight: bold;
 }
 
-.månedligt-bidrag-button:hover,
-.enkelt-bidrag-button:hover {
-    background-color: #96251f;
+.doner-beregner-boks input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Information sektion styling */
-.donér-info {
-    margin: 20px 0;
-}
-
-/* Billede sektion styling */
-.donér-billede img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+#doner-beregn-knap {
+    background-color: #d4342b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
     margin-top: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsiv tilpasning til tablet og mobil */
-@media (max-width: 1023px) {
-    .donér-buttons {
-        flex-direction: column;    /* Stabler knapper på mindre skærme */
-        gap: 10px;
-    }
+#doner-beregn-knap:hover {
+    background-color: #ff9100;
 }
 
-@media (max-width: 767px) {
-    .donér {
-        padding: 15px;
-    }
-    
-    .donér-info p {
-        font-size: 14px;           /* Mindre tekst på mobil */
-    }
+#doner-beregn-resultat {
+    font-size: 24px;
+    color: #000;
+    margin: 10px;
+    padding: 10px;
+}
 
-    .donér-billede img {
-        margin-top: 10px;
+#doner-beregn-resultat strong {
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .doner-banner img {
+        height: 500px;
     }
 }
+.doner-banner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+
