@@ -927,6 +927,14 @@ body {
 .quizknapper:hover {
     background-color:#ff9100;
     }
+
+    @media (max-width: 768px) {
+    #result-text {
+        margin-left: 20%;
+        margin-right: 20%;
+        }
+    }
+
 /* CSS til quizzen slut*/
 
 
