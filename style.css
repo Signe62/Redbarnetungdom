@@ -269,10 +269,6 @@ body {
 }
 
 
-
-
-
-
 /* Design for 'Boost din ansøgning" sektionen */
 .billede-og-tekst-ansoening {
     display: flex;
@@ -310,6 +306,7 @@ body {
     font-size: 32px;
     font-family: Merriweather;
     color: #ff9100;
+    margin-top: 0px;
 }
 
 /* Brødtekst */
