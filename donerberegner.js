@@ -1,6 +1,6 @@
 // Globale variabler
-let donationsBeloeb = document.getElementById('donationsBeloeb');
-let resultat = document.getElementById('resultat');
+let donationsBeloeb = document.getElementById('doner-donationsBeloeb');
+let resultat = document.getElementById('doner-beregn-resultat');
 
 // Array til at matche donation og effekt
 let donationsEffekter = [
@@ -19,18 +19,13 @@ function beregnDonationEffekt() {
     }
 
     let besked = "Dit bidrag gør en forskel!";  // Standardbesked
-    let fundetEffekt = false;
 
     // Brug af loop til at matche beløb med effekt
-    for (let i = 0; i < donationsEffekter.length; i++) {
+    for (let i = donationsEffekter.length - 1; i >= 0; i--) {
         if (beloeb >= donationsEffekter[i].beloeb) {
             besked = `For ${beloeb} kr. kan du give ${donationsEffekter[i].effekt}`;
-            fundetEffekt = true;
+            break;
         }
-    }
-
-    if (!fundetEffekt) {
-        besked = "Dit bidrag hjælper børn i nød!";
     }
 
     // Fejlfinding med console.log
@@ -41,4 +36,4 @@ function beregnDonationEffekt() {
 }
 
 // Event listener til knappen
-document.getElementById('beregnKnap').addEventListener('click', beregnDonationEffekt);
+document.getElementById('doner-beregn-knap').addEventListener('click', beregnDonationEffekt);

@@ -4,61 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Red Barnet Ungdom</title>
+    <!-- Link til CSS-fil for styling -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header med navigation -->
     <header>
         <nav class="navigation-container-forside">
-            <div class="navigation-indhold">
-                <ul class="navigationspunkter"> 
-                    <li class="logo"><img src="img/logo.png" alt="LOGO"></li>
-                    <li><a class="nav-knapper" href="index.html">FORSIDE</a></li>
-                    <li><a class="nav-knapper" href="frivillighed.html">FRIVILLIGHED</a></li>
-                    <li><a class="nav-knapper" href="doner.html">DONÈR</a></li>
-                    <li><a class="nav-knapper" href="#">OM OS</a></li>
-                    <li><a class="nav-knapper" href="#">KONTAKT</a></li>
-                    <li>
-                        <input type="text" id="soegefelt" class="soegefelt" placeholder="Skriv dit søgeord her...">
-                        <button onclick="search()" class="soegeknap">Søg</button>
-                    </li>
-                    <li><a href="blivfrivillig.html" class="bliv-frivillig-knap">Bliv frivillig</a></li>
-                </ul>
-            </div>
+            <ul class="navigationspunkter">
+                <!-- Logo i navigationen -->
+                <li class="logo"><img src="img/logo.png" alt="Red Barnet Ungdom Logo"></li>
+                <!-- Navigation links -->
+                <li><a class="nav-knapper" href="index.html">Forside</a></li>
+                <li><a class="nav-knapper" href="frivillighed.html">Frivillighed</a></li>
+                <li><a class="nav-knapper" href="doner.html">Donér</a></li>
+                <li><a class="nav-knapper" href="#">Om os</a></li>
+                <li><a class="nav-knapper" href="#">Kontakt</a></li>
+                <!-- Søgefelt og søgeknap -->
+                <li class="soegefelt-container">
+                    <input type="text" id="soegefelt" class="soegefelt" placeholder="Skriv dit søgeord her...">
+                    <button onclick="search()" class="soegeknap">Søg</button>
+                </li>
+                <!-- Knap til frivillig tilmelding -->
+                <li><a href="blivfrivillig.html" class="bliv-frivillig-knap">Bliv frivillig</a></li>
+            </ul>
         </nav>
     </header>
-    <section class="banner">
-        <div class="banner-content">
-            <img src="img/doner.jpg" alt="billede af frivillige med ryggen til" class="donation-img">
-            <h1>DONÈR</h1>
-        </div>
-    </section>
-    
-    <section class="donér">
-        <div class="donér-header">
-            <h2>Se hvordan dit bidrag kan hjælpe, ved hjælp af vores beregner:</h2>
-            <h3>Selv et lille beløb kan gøre en forskel.</h3>
-        </div>
-    
-        <div class="donér-støtte">
-            <h4>Hvordan vil du støtte?</h4>
-            <div class="donér-buttons">
-                <button class="månedligt-bidrag-button">Månedligt bidrag</button>
-                <button class="enkelt-bidrag-button">Enkelt bidrag</button>
-            </div>
-        </div>
-    
-        <div class="donér-info">
-            <h5>Ja, jeg vil gerne støtte med et månedligt bidrag!</h5>
-            <h6>Giv et enkelt bidrag</h6>
-            <p>Du vil inden for ti arbejdsdage blive ringet op af en af vores søde konsulenter, der vil fortælle dig mere om dine muligheder som frivillig i Red Barnet Ungdom. For at blive frivillig skal du være under 30 år. Du skal også være medlem og kunne fremvise en ren børneattest, det er ganske let at få styr på, og det kan du høre meget mere om, når du bliver ringet op.</p>
-        </div>
-    
-        <div class="donér-billede">
-            <img src="img/mobilepay.jpg" alt="logo mobilepay">
-        </div>
-    </section>
-    
 
+    <!-- Hovedindhold -->
+    <main>
+        <!-- Bannersektion med billede og hovedoverskrift -->
+        <section class="doner-banner">
+            <img src="img/group.jpg" alt="Sammenhold">
+            <h1>Donér</h1>
+        </section>
+
+        <!-- Beregner sektion -->
+        <section class="doner-beregner-container">
+            <h1>Se, hvordan dit bidrag kan hjælpe med vores beregner:</h1>
+            <div class="doner-beregner-boks">
+                <label for="doner-donationsBeloeb">Beløb du vil donere i DKK:</label>
+                <input type="number" id="doner-donationsBeloeb" placeholder="100 DKK">
+                <button id="doner-beregn-knap">Beregn</button>
+                <p id="doner-beregn-resultat"><strong>Resultat:</strong> Du har hjulpet X børn med Y.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Link til JavaScript-filen -->
+    <script src="beregner.js"></script>
+
+
+
+    
     <footer class="footer">
         <div class="footercontent">
             <div class="sektion1">
