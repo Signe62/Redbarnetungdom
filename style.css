@@ -1017,6 +1017,15 @@ display: block;
 margin: auto;
 }
 
+/* Smartphone: 767px and below */
+@media (max-width: 767px) {
+    video {
+        width: 100%; /* Fuld bredde for smartphones */
+        height: auto; /* Beholder højden proportional */
+    }
+}
+
+
 .tilmeld-h1 {
     font-size: 32px;
     font-family: Merriweather;
@@ -1049,86 +1058,35 @@ margin: auto;
     margin-right: 250px;
 }
 
+.tilmeld-h4 {
+    font-size: 18px;
+    font-family: Merriweather;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 250px; /* Standard margin for desktop */
+    margin-right: 250px; /* Standard margin for desktop */
+}
 
+/* Tablet: 768px - 1023px */
+@media (max-width: 1023px) {
+    .tilmeld-h4 {
+        margin-left: 50px; /* Juster margen for tablet */
+        margin-right: 50px; /* Juster margen for tablet */
+    }
+}
+
+/* Smartphone: 767px and below */
+@media (max-width: 767px) {
+    .tilmeld-h4 {
+        margin-left: 20px; /* Juster margen for smartphones */
+        margin-right: 20px; /* Juster margen for smartphones */
+    }
+}
 
 
 /* CSS til "Doner"-siden */
-/* Generelle stilarter */
-body {
-    margin: 0;
-    font-family: Helvetica, sans-serif;
-}
-
-/* Navigation */
-.navigationspunkter {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    list-style: none;
-}
-
-.navigationspunkter li {
-    margin: 0 15px;
-}
-
-.navigation-container-forside {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo img {
-    width: 100px;
-}
-
-.nav-knapper {
-    color: #ff9100;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.nav-knapper:hover {
-    color: #d4342b;
-}
-
-/* Søgefelt */
-.soegefelt {
-    padding: 8px;
-    font-size: 12px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    width: 180px;
-}
-
-.soegeknap {
-    padding: 8px 16px;
-    font-size: 15px;
-    background-color: grey;
-    border: none;
-    color: #ffffff;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.soegeknap:hover {
-    background-color: #ff9100;
-}
-
-/* Bliv frivillig knap */
-.bliv-frivillig-knap {
-    background-color: #93c7f3;
-    color: #ffffff;
-    padding: 8px 16px;
-    font-size: 15px;
-    border-radius: 20px;
-    text-decoration: none;
-}
-
-.bliv-frivillig-knap:hover {
-    color: #d4342b;
-}
-
 /* Banner sektion */
 .doner-banner {
     position: relative;
@@ -1225,7 +1183,6 @@ body {
     font-weight: bold;
 }
 
-
 @media screen and (min-width: 1024px) {
     .doner-banner img {
         height: 500px;
@@ -1236,6 +1193,58 @@ body {
     height: 400px;
     object-fit: cover;
 }
+
+
+
+/* Styling af støtte sektionen */
+.stoette-container {
+    text-align: center;
+    font-family: Merriweather, serif;
+    color: #ff9100;
+    margin: 20px;
+}
+
+.stoette-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.stoette-valg {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.stoette-knap {
+    background-color: #c44d36;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.stoette-knap:hover {
+    background-color: #a73e2b;
+}
+
+.stoette-knap.aktiv {
+    background-color: #a73e2b;
+}
+
+.stoette-container h3 {
+    font-size: 22px;
+    color: #ff9100;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+
 
 
 
