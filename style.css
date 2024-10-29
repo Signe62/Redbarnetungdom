@@ -1110,6 +1110,7 @@ margin: auto;
 .donér-header h2,
 .donér-header h3 {
     font-size: 30px;
+    font-family: Merriweather;
     color: #ff9100;
     margin-bottom: 200px;
 }
@@ -1117,11 +1118,13 @@ margin: auto;
 .donér-støtte h4, .donér-info h5, .donér-info h6{
     font-size: 30px;
     color: #ff9100;
+    font-family: Merriweather;
 }
 
 .donér-info p{
     font-size: 15px;
     color: #000000;
+    font-family: Merriweather;
     margin-left: 90px;
     margin-left: 90px;
     font-weight: 550;
@@ -1142,7 +1145,7 @@ margin: auto;
 .enkelt-bidrag-button {
     background-color: #d4342b;
     color: white;
-    font-family: Helvetica, sans-serif;
+    font-family: Merriweather;
     padding: 10px 20px;
     border-radius: 20px;
     font-size: 18px;
