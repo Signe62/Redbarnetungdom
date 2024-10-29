@@ -936,13 +936,11 @@ body {
 .quizknapper:hover {
     background-color:#ff9100;
     }
-
     /* CSS til quizzen slut*/
 
     /* CSS til tilmeldingsformular*/
 .tilmeld-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: Helvetica, sans-serif;
     margin: 0;
     /* padding: 20px; */
 }
