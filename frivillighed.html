@@ -86,153 +86,153 @@
     </div>
 
 <!-- Quizzen -->
-<h3 class="frivillighedh3">Hvilken type frivillighed passer bedst til dig?</h3>
+    <h3 class="frivillighedh3">Hvilken type frivillighed passer bedst til dig?</h3>
 
-<p class="quiz-tekst">Tag testen her!</p>
+    <p class="quiz-tekst">Tag testen her!</p>
 
-<!-- Progress Bar -->
-<div class="progress-container">
-    <div class="progress-bar" id="progressBar"></div>
-</div>
-
-<!-- Question 1 -->
-<div class="question activeq" id="question1">
-    <p>Hvilken form for aktivitet finder du mest interessant?</p>
-    <button class="svarmuligheder" onclick="answerQuestion(1, 'running')">At være fysisk aktiv og støtte en god sag</button>
-    <button class="svarmuligheder" onclick="answerQuestion(1, 'learning')">At hjælpe andre med at lære</button>
-    <button class="svarmuligheder" onclick="answerQuestion(1, 'crisis')">At støtte børn i vanskelige situationer</button>
-</div>
-
-<!-- Question 2 -->
-<div class="question" id="question2">
-    <p>Hvordan vil du helst bidrage som frivillig?</p>
-    <button class="svarmuligheder" onclick="answerQuestion(2, 'running')">Ved at få mennesker til at deltage i en sjov og sund aktivitet</button>
-    <button class="svarmuligheder" onclick="answerQuestion(2, 'learning')">Ved at støtte børn og unge i deres læring</button>
-    <button class="svarmuligheder" onclick="answerQuestion(2, 'crisis')">Ved at give tryghed til børn i svære situationer</button>
-    <div>
-        <button class="quizknapper" onclick="goBack()" style="margin-top: 20px;">Tilbage</button>
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
     </div>
-</div>
 
-<!-- Question 3 -->
-<div class="question" id="question3">
-    <p>Hvad motiverer dig mest i frivilligt arbejde?</p>
-    <button class="svarmuligheder" onclick="answerQuestion(3, 'running')">At kunne kombinere sport og velgørenhed</button>
-    <button class="svarmuligheder" onclick="answerQuestion(3, 'learning')">At hjælpe børn med at nå deres faglige mål</button>
-    <button class="svarmuligheder" onclick="answerQuestion(3, 'crisis')">At skabe en tryg hverdag for børn i sårbare situationer</button>
-    <div>
-        <button class="quizknapper" onclick="goBack()" style="margin-top: 20px;">Tilbage</button>
+    <!-- Question 1 -->
+    <div class="question activeq" id="question1">
+        <p>Hvilken form for aktivitet finder du mest interessant?</p>
+        <button class="svarmuligheder" onclick="answerQuestion(1, 'running')">At være fysisk aktiv og støtte en god sag</button>
+        <button class="svarmuligheder" onclick="answerQuestion(1, 'learning')">At hjælpe andre med at lære</button>
+        <button class="svarmuligheder" onclick="answerQuestion(1, 'crisis')">At støtte børn i vanskelige situationer</button>
     </div>
-</div>
 
-<!-- Result -->
-<div id="result" style="display: none;">
-    <h3>Din perfekte frivillig-rolle er:</h3>
-    <p id="result-text"></p>
-    <div>
-        <button class="quizknapper" onclick="restartQuiz()" style="margin-top: 20px;">Tag testen igen</button>
-    </div>
-</div>
-
-        
-        <!--Tilmeldingsformular-->
-        <body class="tilmeld-body">
-        <div class="tilmeld-container">
-            <h2 class="tilmeld-h2">Tilmelding til frivilligt arbejde</h2>
-            <form id="tilmeldForm">
-                <div class="tilmeld-form-group">
-                    <label for="tilmeld-navn" class="tilmeld-label">Fulde navn:</label>
-                    <input type="text" id="tilmeld-navn" class="tilmeld-input" placeholder="Indtast dit navn">
-                    <div class="tilmeld-error" id="tilmeld-navnError"></div>
-                </div>
-                <div class="tilmeld-form-group">
-                    <label for="tilmeld-birthdate" class="tilmeld-label">Fødselsdag:</label>
-                    <input type="date" id="tilmeld-birthdate" class="tilmeld-input">
-                    <div class="tilmeld-error" id="tilmeld-birthdateError"></div>
-                </div>
-                <div class="tilmeld-form-group">
-                    <label for="tilmeld-city" class="tilmeld-label">By:</label>
-                    <input type="text" id="tilmeld-city" class="tilmeld-input" placeholder="Indtast din by her">
-                    <div class="tilmeld-error" id="tilmeld-cityError"></div>
-                </div>
-                <div class="tilmeld-form-group">
-                    <label for="tilmeld-zipcode" class="tilmeld-label">Postnummer:</label>
-                    <input type="text" id="tilmeld-zipcode" class="tilmeld-input" placeholder="Indtast dit postnummer her">
-                    <div class="tilmeld-error" id="tilmeld-zipcodeError"></div>
-                </div>
-                <div class="tilmeld-form-group">
-                    <label for="tilmeld-email" class="tilmeld-label">E-mail:</label>
-                    <input type="email" id="tilmeld-email" class="tilmeld-input" placeholder="Indtast din e-mail">
-                    <div class="tilmeld-error" id="tilmeld-emailError"></div>
-                </div>
-                <div class="tilmeld-form-group">
-                    <label for="tilmeld-phone" class="tilmeld-label">Telefonnummer:</label>
-                    <input type="tel" id="tilmeld-phone" class="tilmeld-input" placeholder="Indtast dit telefonnummer">
-                    <div class="tilmeld-error" id="tilmeld-phoneError"></div>
-                </div>
-                <div class="tilmeld-form-group">
-                    <label for="tilmeld-interest" class="tilmeld-label">Ønsket indsats:</label>
-                    <select id="tilmeld-interest" class="tilmeld-select">
-                        <option value="">Vælg en mulighed</option>
-                        <option value="events">Børnenes ven</option>
-                        <option value="fundraising">Lektiehjælp</option>
-                        <option value="mentoring">Sports- og fritidsforeninger</option>
-                        <option value="teaching">Hjælp på krisecentre</option>
-                    </select>
-                    <div class="tilmeld-error" id="tilmeld-interestError"></div>
-                </div>
-                <button type="submit" class="tilmeld-button">Tilmeld</button>
-            </form>
-        </div>
-        </body>
-        <!--Tilmeldingsformular slut-->
-
-<!--footer af Sophie & Signe-->
-<footer class="footer">
-    <div class="footercontent">
-        <div class="sektion1">
-            <img src="img/logo.png" alt="Red Barnet Ungdom logo" class="footer-logo">
-            <p><strong>Sekretariatet, København</strong><br>Gammel Kongevej 60, 4. sal<br>1850 Frederiksberg C</p>
-            <p><strong>Sekretariatet, Aarhus</strong><br>Frederiksgade 76A, 1. sal<br>8000 Århus C</p>
-            <p><strong>Telefon:</strong><br>+45 35 24 85 42</p>
-            <p><strong>Mail:</strong><br>redbarnetungdom@redbarnetungdom.dk</p>
-        </div>
-
-        <div class="sektion2">
-            <p><strong>Lokalforeninger</strong></p>
-            <ul class="liste">
-                <li>Aarhus</li>
-                <li>Esbjerg</li>
-                <li>Fyn</li>
-                <li>København Nord</li>
-                <li>København Syd</li>
-                <li>Køge</li>
-                <li>Midtsjælland</li>
-                <li>Nordsjælland</li>
-                <li>Randers</li>
-                <li>Slagelse</li>
-                <li>Vejle</li>
-            </ul>
-        </div>
-
-        <div class="sektion3">
-            <p><strong>Hurtige links:</strong></p>
-            <p>Bliv frivillig</p>
-            <p>Donér penge</p>
+    <!-- Question 2 -->
+    <div class="question" id="question2">
+        <p>Hvordan vil du helst bidrage som frivillig?</p>
+        <button class="svarmuligheder" onclick="answerQuestion(2, 'running')">Ved at få mennesker til at deltage i en sjov og sund aktivitet</button>
+        <button class="svarmuligheder" onclick="answerQuestion(2, 'learning')">Ved at støtte børn og unge i deres læring</button>
+        <button class="svarmuligheder" onclick="answerQuestion(2, 'crisis')">Ved at give tryghed til børn i svære situationer</button>
+        <div>
+            <button class="quizknapper" onclick="goBack()" style="margin-top: 20px;">Tilbage</button>
         </div>
     </div>
 
-    <div class="footercontent2">
-        <a href="https://www.linkedin.com/company/red-barnet-ungdom/" target="_blank"><img src="img/linkedinlogo.png" alt="Linkedin logo" class="socialemedierlogo"></a>
-        <a href="https://www.instagram.com/redbarnetungdom/" target="_blank"><img src="img/instagramlogo.png" alt="Instagram logo" class="socialemedierlogo"></a>
-        <a href="https://www.facebook.com/redbarnetungdom" target="_blank"><img src="img/facebooklogo.png" alt="Facebook logo" class="socialemedierlogo"></a>
-        <a href="#" target="_blank"><img src="img/tiktoklogo.png" alt="Tiktok logo" class="socialemedierlogo-footer"></a>
+    <!-- Question 3 -->
+    <div class="question" id="question3">
+        <p>Hvad motiverer dig mest i frivilligt arbejde?</p>
+        <button class="svarmuligheder" onclick="answerQuestion(3, 'running')">At kunne kombinere sport og velgørenhed</button>
+        <button class="svarmuligheder" onclick="answerQuestion(3, 'learning')">At hjælpe børn med at nå deres faglige mål</button>
+        <button class="svarmuligheder" onclick="answerQuestion(3, 'crisis')">At skabe en tryg hverdag for børn i sårbare situationer</button>
+        <div>
+            <button class="quizknapper" onclick="goBack()" style="margin-top: 20px;">Tilbage</button>
+        </div>
     </div>
 
-    <div class="copy">
-        <p>@ Red Barnet Ungdom 2024</p>
+    <!-- Result -->
+    <div id="result" style="display: none;">
+        <h3>Din perfekte frivillig-rolle er:</h3>
+        <p id="result-text"></p>
+        <div>
+            <button class="quizknapper" onclick="restartQuiz()" style="margin-top: 20px;">Tag testen igen</button>
+        </div>
     </div>
-</footer>
-    
+
+            
+            <!--Tilmeldingsformular-->
+            <body class="tilmeld-body">
+            <div class="tilmeld-container">
+                <h2 class="tilmeld-h2">Tilmelding til frivilligt arbejde</h2>
+                <form id="tilmeldForm">
+                    <div class="tilmeld-form-group">
+                        <label for="tilmeld-navn" class="tilmeld-label">Fulde navn:</label>
+                        <input type="text" id="tilmeld-navn" class="tilmeld-input" placeholder="Indtast dit navn">
+                        <div class="tilmeld-error" id="tilmeld-navnError"></div>
+                    </div>
+                    <div class="tilmeld-form-group">
+                        <label for="tilmeld-birthdate" class="tilmeld-label">Fødselsdag:</label>
+                        <input type="date" id="tilmeld-birthdate" class="tilmeld-input">
+                        <div class="tilmeld-error" id="tilmeld-birthdateError"></div>
+                    </div>
+                    <div class="tilmeld-form-group">
+                        <label for="tilmeld-city" class="tilmeld-label">By:</label>
+                        <input type="text" id="tilmeld-city" class="tilmeld-input" placeholder="Indtast din by her">
+                        <div class="tilmeld-error" id="tilmeld-cityError"></div>
+                    </div>
+                    <div class="tilmeld-form-group">
+                        <label for="tilmeld-zipcode" class="tilmeld-label">Postnummer:</label>
+                        <input type="text" id="tilmeld-zipcode" class="tilmeld-input" placeholder="Indtast dit postnummer her">
+                        <div class="tilmeld-error" id="tilmeld-zipcodeError"></div>
+                    </div>
+                    <div class="tilmeld-form-group">
+                        <label for="tilmeld-email" class="tilmeld-label">E-mail:</label>
+                        <input type="email" id="tilmeld-email" class="tilmeld-input" placeholder="Indtast din e-mail">
+                        <div class="tilmeld-error" id="tilmeld-emailError"></div>
+                    </div>
+                    <div class="tilmeld-form-group">
+                        <label for="tilmeld-phone" class="tilmeld-label">Telefonnummer:</label>
+                        <input type="tel" id="tilmeld-phone" class="tilmeld-input" placeholder="Indtast dit telefonnummer">
+                        <div class="tilmeld-error" id="tilmeld-phoneError"></div>
+                    </div>
+                    <div class="tilmeld-form-group">
+                        <label for="tilmeld-interest" class="tilmeld-label">Ønsket indsats:</label>
+                        <select id="tilmeld-interest" class="tilmeld-select">
+                            <option value="">Vælg en mulighed</option>
+                            <option value="events">Børnenes ven</option>
+                            <option value="fundraising">Lektiehjælp</option>
+                            <option value="mentoring">Sports- og fritidsforeninger</option>
+                            <option value="teaching">Hjælp på krisecentre</option>
+                        </select>
+                        <div class="tilmeld-error" id="tilmeld-interestError"></div>
+                    </div>
+                    <button type="submit" class="tilmeld-button">Tilmeld</button>
+                </form>
+            </div>
+            </body>
+            <!--Tilmeldingsformular slut-->
+
+    <!--footer af Sophie & Signe-->
+    <footer class="footer">
+        <div class="footercontent">
+            <div class="sektion1">
+                <img src="img/logo.png" alt="Red Barnet Ungdom logo" class="footer-logo">
+                <p><strong>Sekretariatet, København</strong><br>Gammel Kongevej 60, 4. sal<br>1850 Frederiksberg C</p>
+                <p><strong>Sekretariatet, Aarhus</strong><br>Frederiksgade 76A, 1. sal<br>8000 Århus C</p>
+                <p><strong>Telefon:</strong><br>+45 35 24 85 42</p>
+                <p><strong>Mail:</strong><br>redbarnetungdom@redbarnetungdom.dk</p>
+            </div>
+
+            <div class="sektion2">
+                <p><strong>Lokalforeninger</strong></p>
+                <ul class="liste">
+                    <li>Aarhus</li>
+                    <li>Esbjerg</li>
+                    <li>Fyn</li>
+                    <li>København Nord</li>
+                    <li>København Syd</li>
+                    <li>Køge</li>
+                    <li>Midtsjælland</li>
+                    <li>Nordsjælland</li>
+                    <li>Randers</li>
+                    <li>Slagelse</li>
+                    <li>Vejle</li>
+                </ul>
+            </div>
+
+            <div class="sektion3">
+                <p><strong>Hurtige links:</strong></p>
+                <p>Bliv frivillig</p>
+                <p>Donér penge</p>
+            </div>
+        </div>
+
+        <div class="footercontent2">
+            <a href="https://www.linkedin.com/company/red-barnet-ungdom/" target="_blank"><img src="img/linkedinlogo.png" alt="Linkedin logo" class="socialemedierlogo"></a>
+            <a href="https://www.instagram.com/redbarnetungdom/" target="_blank"><img src="img/instagramlogo.png" alt="Instagram logo" class="socialemedierlogo"></a>
+            <a href="https://www.facebook.com/redbarnetungdom" target="_blank"><img src="img/facebooklogo.png" alt="Facebook logo" class="socialemedierlogo"></a>
+            <a href="#" target="_blank"><img src="img/tiktoklogo.png" alt="Tiktok logo" class="socialemedierlogo-footer"></a>
+        </div>
+
+        <div class="copy">
+            <p>@ Red Barnet Ungdom 2024</p>
+        </div>
+    </footer>
+    <script src="soegefunktion.js"></script>
 </body>
 </html>
