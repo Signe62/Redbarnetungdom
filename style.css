@@ -751,112 +751,103 @@ body {
     /* CSS til frivillighed-siden slut*/ 
 
 
-    /* CSS til footeren */
-    .footer {
-        background-color: #93c7f3;
-        margin: 0px;
-        padding: 0px;
-    }
-    
+/* CSS til footeren */
+.footer {
+    background-color: #93c7f3;
+    padding: 0px 0;
+}
+
+.footercontent {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+    width: 150px;
+}
+
+.sektion1, .sektion2, .sektion3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.sektion1 p, .sektion2 p, .sektion3 p {
+    margin: 10px 0;
+}
+
+.sektion1 strong, .sektion2 strong, .sektion3 strong {
+    font-weight: bold;
+}
+
+.liste {
+    padding: 0;
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+.liste li {
+    margin-bottom: 5px;
+}
+
+.footercontent2 {
+    display: flex;
+    gap: 15px;
+    justify-content: right;
+    padding: 20px 0 0;
+}
+
+.socialemedierlogo {
+    height: 50px;
+    width: 50px;
+}
+
+/* Copy-sektion */
+.copy {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: lightgrey;
+    background-color: #6E95B6;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.copy p {
+    margin: 0;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
     .footercontent {
-        display: flex;
-        gap: 200px;
-    }
-    
-    .sektion1 { 
-        font-family: Arial, Helvetica, sans-serif; 
-        padding-left: 100px;
-    
-    }
-    
-    .liste li { 
-        margin-bottom: 5px;
-        list-style-type: none; 
-    } 
-    
-    .sektion3 {
-        margin-left: 70px;
-    }
-    
-    .footercontent2 {
-        display: flex; 
-        gap: 15px;
-        justify-content: flex-end;
-        margin-right: 50px;
-        margin-top: -50px;
-    }
-    .socialemedierlogo {
-        height: 40px;
-        width: 40px; 
-    }
-    
-    .copy {
-        font-family: Arial, Helvetica, sans-serif; 
+        flex-direction: column;
         text-align: center;
-        color: lightgrey;
-        background-color: #6E95B6;   
+        gap: 20px;
     }
 
-    @media (max-width: 768px) {
-        .footer {
-            padding-top: 5px;
-        }
-
-        .footercontent {
-            display: block;
-            gap: 20px;
-            text-align: center;
-            
-        }
-    
-        .sektion1 {
-            margin-left: -100px;
-            font-size: 12px;
-            text-align: center;
-        }
-
-        .sektion2{
-            padding-left: 100px;
-            margin-left: -100px;
-            font-size: 12px;
-            text-align: center;
-        }
-    
-        .sektion3 {
-            padding-left: -70px;
-            font-size: 12px;
-            text-align: center;
-            padding-bottom: 5px;
-        }
-
-        .liste li { 
-            margin-bottom: 5px;
-            list-style-type: none; 
-            margin-left: -30px;
-            font-size: 12px;
-            text-align: center;
-        } 
-
-        .footercontent2 {
-            justify-content: center;
-            margin: 0;
-            margin-top: 10px;
-        }
-    
-        .socialemedierlogo {
-            height: 30px;
-            width: 30px;
-        }
-    
-        .copy {
-            font-size: 14px;
-        }
+    .sektion1, .sektion2, .sektion3 {
+        font-size: 12px;
     }
 
-    /* CSS til footeren slut*/
+    .footercontent2 {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .socialemedierlogo {
+        height: 30px;
+        width: 30px;
+    }
+
+    .copy {
+        font-size: 12px;
+    }
+}
+ /* CSS til footeren slut*/
 
 
-    /* CSS til quizzen */
+/* CSS til quizzen */
 .progress-container {
     width: 50%;
     background-color: #93c7f3;
@@ -1192,8 +1183,6 @@ margin: auto;
     object-fit: cover;
 }
 
-
-
 /* Styling af støtte sektionen */
 .stoette-container {
     text-align: center;
@@ -1242,7 +1231,113 @@ margin: auto;
     margin-top: 0;
 }
 
+/* Styling for enkeltbidrag-sektionen */
+.enkeltbidrag-sektion {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 40px auto;
+    max-width: 800px;
+    color: #333;
+}
 
+.enkeltbidrag-sektion h2 {
+    font-size: 28px;
+    color: #ff9100;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
+.enkeltbidrag-beskrivelse {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
 
+.mobilepay-logo img {
+    width: 150px;
+    margin-top: 20px;
+}
+
+/* Responsiv styling */
+@media (max-width: 768px) {
+    .doner-banner img {
+        height: 250px;
+    }
+
+    .doner-banner h1 {
+        font-size: 36px;
+        padding: 0 10px;
+    }
+
+    .doner-beregner-container h1 {
+        font-size: 28px;
+    }
+
+    .doner-beregner-boks {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .doner-beregner-boks label {
+        font-size: 18px;
+    }
+
+    .stoette-container h2 {
+        font-size: 20px;
+    }
+
+    .stoette-valg {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .stoette-knap {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .enkeltbidrag-sektion h2 {
+        font-size: 24px;
+    }
+
+    .enkeltbidrag-beskrivelse {
+        font-size: 14px;
+    }
+
+    .mobilepay-logo img {
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .doner-banner h1 {
+        font-size: 28px;
+    }
+
+    .doner-beregner-boks input[type="number"] {
+        max-width: 100%;
+    }
+
+    #doner-beregn-knap {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .stoette-knap {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .enkeltbidrag-sektion h2 {
+        font-size: 22px;
+    }
+
+    .mobilepay-logo img {
+        width: 100px;
+    }
+}
+
+/* CSS til "Doner"-siden slut */
 

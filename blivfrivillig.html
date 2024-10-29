@@ -8,10 +8,12 @@
     <script src="tilmeldingsformular.js"></script>
 </head>
 <body>
+
+    <!-- Header med navigation -->
     <header>
         <nav class="navigation-container-forside">
             <div class="navigation-indhold">
-                <ul class="navigationspunkter"> 
+                <ul class="navigationspunkter">
                     <li class="logo"><img src="img/logo.png" alt="LOGO"></li>
                     <li><a class="nav-knapper" href="index.html">FORSIDE</a></li>
                     <li><a class="nav-knapper" href="frivillighed.html">FRIVILLIGHED</a></li>
@@ -28,92 +30,101 @@
         </nav>
     </header>
 
+    <!-- Introduktionstekst til tilmelding -->
     <h1 class="tilmeld-h1">Kunne du tænke dig at arbejde som frivillig for Red Barnet Ungdom?</h1>
-    <h3 class="tilmeld-h3">Tilmelding dig i formularen herunder og vi kontakter dig!</h3>
-    <h4 class="tilmeld-h4">Du vil inden for ti arbejdsdage modtage en opringning af en af vores søde konsulenter, som vil fortælle dig mere om dine muligheder som frivillig i Red Barnet Ungdom. For at blive frivillig, skal du være under 30 år.
-Du skal derudover være medlem hos Red Barnet Ungdom og kunne fremvise en ren børneattest. Dette er ganske let og du vil høre meget mere, når du bliver opringet.</h4>
+    <h3 class="tilmeld-h3">Tilmeld dig i formularen herunder, og vi kontakter dig!</h3>
+    <h4 class="tilmeld-h4">Du vil inden for ti arbejdsdage modtage en opringning fra en af vores søde konsulenter, som vil fortælle dig mere om dine muligheder som frivillig i Red Barnet Ungdom...</h4>
 
-
-        <!--Tilmeldingsformular-->
-        <body class="tilmeld-body">
-            <div class="tilmeld-container">
-                <form id="tilmeldForm">
-                    <div class="tilmeld-form-group">
-                        <label for="tilmeld-navn" class="tilmeld-label">Fulde navn:</label>
-                        <input type="text" id="tilmeld-navn" class="tilmeld-input" placeholder="Indtast dit navn">
-                        <div class="tilmeld-error" id="tilmeld-navnError"></div>
-                    </div>
-                    <div class="tilmeld-form-group">
-                        <label for="tilmeld-birthdate" class="tilmeld-label">Fødselsdag:</label>
-                        <input type="date" id="tilmeld-birthdate" class="tilmeld-input">
-                        <div class="tilmeld-error" id="tilmeld-birthdateError"></div>
-                    </div>
-                    <div class="tilmeld-form-group">
-                        <label for="tilmeld-city" class="tilmeld-label">By:</label>
-                        <input type="text" id="tilmeld-city" class="tilmeld-input" placeholder="Indtast din by her">
-                        <div class="tilmeld-error" id="tilmeld-cityError"></div>
-                    </div>
-                    <div class="tilmeld-form-group">
-                        <label for="tilmeld-zipcode" class="tilmeld-label">Postnummer:</label>
-                        <input type="text" id="tilmeld-zipcode" class="tilmeld-input" placeholder="Indtast dit postnummer her">
-                        <div class="tilmeld-error" id="tilmeld-zipcodeError"></div>
-                    </div>
-                    <div class="tilmeld-form-group">
-                        <label for="tilmeld-email" class="tilmeld-label">E-mail:</label>
-                        <input type="email" id="tilmeld-email" class="tilmeld-input" placeholder="Indtast din e-mail">
-                        <div class="tilmeld-error" id="tilmeld-emailError"></div>
-                    </div>
-                    <div class="tilmeld-form-group">
-                        <label for="tilmeld-phone" class="tilmeld-label">Telefonnummer:</label>
-                        <input type="tel" id="tilmeld-phone" class="tilmeld-input" placeholder="Indtast dit telefonnummer">
-                        <div class="tilmeld-error" id="tilmeld-phoneError"></div>
-                    </div>
-                    <div class="tilmeld-form-group">
-                        <label for="tilmeld-interest" class="tilmeld-label">Ønsket indsats:</label>
-                        <select id="tilmeld-interest" class="tilmeld-select">
-                            <option value="">Vælg en mulighed</option>
-                            <option value="events">Børnenes ven</option>
-                            <option value="fundraising">Lektiehjælp</option>
-                            <option value="mentoring">Sports- og fritidsforeninger</option>
-                            <option value="teaching">Hjælp på krisecentre</option>
-                        </select>
-                        <div class="tilmeld-error" id="tilmeld-interestError"></div>
-                    </div>
-                    <button type="submit" class="tilmeld-button">Tilmeld</button>
-                </form>
+    <!-- Tilmeldingsformular -->
+    <div class="tilmeld-container">
+        <form id="tilmeldForm">
+            <div class="tilmeld-form-group">
+                <label for="tilmeld-navn" class="tilmeld-label">Fulde navn:</label>
+                <input type="text" id="tilmeld-navn" class="tilmeld-input" placeholder="Indtast dit navn">
+                <div class="tilmeld-error" id="tilmeld-navnError"></div>
             </div>
-            </body>
-            <!--Tilmeldingsformular slut-->
-<!--footer af Sophie-->
-<footer class="footer">
-    <div class="footercontent">
-        <div class="sektion1">
-            <p><strong>Sekretariatet, København</strong><br> Kongevej 60, 4. sal<br>1850 Frederiksberg C</p>
-            <p><strong>Sekretariatet, Aarhus</strong><br>Frederiksgade 76A, 1. sal<br>8000 Århus C</p>
-            <p><strong>Telefon:</strong><br>+45 35 24 85 42</p>
-            <p><strong>Mail:</strong><br>redbarnetungdom@redbarnetungdom.dk</p>
-        </div>
-
-        <div class="sektion2">
-            <p><strong>Lokalforeninger</strong></p>
-            <ul class="liste"> 
-                <li>Aarhus</li><li>Esbjerg</li><li>Fyn</li><li>København Nord</li><li>København Syd</li>
-                <li>Køge</li><li>Midtsjælland</li><li>Nordsjælland</li><li>Randers</li><li>Slagelse</li><li>Vejle</li>
-            </ul>
-        </div> 
-
-        <div class="sektion3">
-            <p><strong>Links</strong></p>
-            <p>Bliv frivillig</p>
-            <p>Donér</p>  
-        </div>
+            <div class="tilmeld-form-group">
+                <label for="tilmeld-birthdate" class="tilmeld-label">Fødselsdag:</label>
+                <input type="date" id="tilmeld-birthdate" class="tilmeld-input">
+                <div class="tilmeld-error" id="tilmeld-birthdateError"></div>
+            </div>
+            <div class="tilmeld-form-group">
+                <label for="tilmeld-city" class="tilmeld-label">By:</label>
+                <input type="text" id="tilmeld-city" class="tilmeld-input" placeholder="Indtast din by her">
+                <div class="tilmeld-error" id="tilmeld-cityError"></div>
+            </div>
+            <div class="tilmeld-form-group">
+                <label for="tilmeld-zipcode" class="tilmeld-label">Postnummer:</label>
+                <input type="text" id="tilmeld-zipcode" class="tilmeld-input" placeholder="Indtast dit postnummer her">
+                <div class="tilmeld-error" id="tilmeld-zipcodeError"></div>
+            </div>
+            <div class="tilmeld-form-group">
+                <label for="tilmeld-email" class="tilmeld-label">E-mail:</label>
+                <input type="email" id="tilmeld-email" class="tilmeld-input" placeholder="Indtast din e-mail">
+                <div class="tilmeld-error" id="tilmeld-emailError"></div>
+            </div>
+            <div class="tilmeld-form-group">
+                <label for="tilmeld-phone" class="tilmeld-label">Telefonnummer:</label>
+                <input type="tel" id="tilmeld-phone" class="tilmeld-input" placeholder="Indtast dit telefonnummer">
+                <div class="tilmeld-error" id="tilmeld-phoneError"></div>
+            </div>
+            <div class="tilmeld-form-group">
+                <label for="tilmeld-interest" class="tilmeld-label">Ønsket indsats:</label>
+                <select id="tilmeld-interest" class="tilmeld-select">
+                    <option value="">Vælg en mulighed</option>
+                    <option value="events">Børnenes ven</option>
+                    <option value="fundraising">Lektiehjælp</option>
+                    <option value="mentoring">Sports- og fritidsforeninger</option>
+                    <option value="teaching">Hjælp på krisecentre</option>
+                </select>
+                <div class="tilmeld-error" id="tilmeld-interestError"></div>
+            </div>
+            <button type="submit" class="tilmeld-button">Tilmeld</button>
+        </form>
     </div>
 
-    <div class="footercontent2">
-        <a href="https://www.linkedin.com/company/red-barnet-ungdom/" target="_blank"><img src="img/linkedinlogo.png" alt="Linkedin logo" class="socialemedierlogo"></a>
-        <a href="https://www.instagram.com/redbarnetungdom/" target="_blank"><img src="img/instagramlogo.png" alt="Instagram logo" class="socialemedierlogo"></a>
-        <a href="https://www.facebook.com/redbarnetungdom" target="_blank"><img src="img/facebooklogo.png" alt="Facebook logo" class="socialemedierlogo"></a>
-        <a href="#" target="_blank"><img src="img/tiktoklogo.png" alt="Tiktok logo" class="socialemedierlogo"></a>
-    </div>
-</footer> 
-            </html>
+    <!-- Footer af Sophie & Signe -->
+    <footer class="footer">
+        <div class="footercontent">
+            <div class="sektion1">
+                <img src="img/logo.png" alt="Red Barnet Ungdom logo" class="footer-logo">
+                <p><strong>Sekretariatet, København</strong><br>Gammel Kongevej 60, 4. sal<br>1850 Frederiksberg C</p>
+                <p><strong>Sekretariatet, Aarhus</strong><br>Frederiksgade 76A, 1. sal<br>8000 Århus C</p>
+                <p><strong>Telefon:</strong><br>+45 35 24 85 42</p>
+                <p><strong>Mail:</strong><br>redbarnetungdom@redbarnetungdom.dk</p>
+            </div>
+            <div class="sektion2">
+                <p><strong>Lokalforeninger</strong></p>
+                <ul class="liste">
+                    <li>Aarhus</li>
+                    <li>Esbjerg</li>
+                    <li>Fyn</li>
+                    <li>København Nord</li>
+                    <li>København Syd</li>
+                    <li>Køge</li>
+                    <li>Midtsjælland</li>
+                    <li>Nordsjælland</li>
+                    <li>Randers</li>
+                    <li>Slagelse</li>
+                    <li>Vejle</li>
+                </ul>
+            </div>
+            <div class="sektion3">
+                <p><strong>Hurtige links:</strong></p>
+                <p>Bliv frivillig</p>
+                <p>Donér penge</p>
+            </div>
+        </div>
+        <div class="footercontent2">
+            <a href="https://www.linkedin.com/company/red-barnet-ungdom/" target="_blank"><img src="img/linkedinlogo.png" alt="Linkedin logo" class="socialemedierlogo"></a>
+            <a href="https://www.instagram.com/redbarnetungdom/" target="_blank"><img src="img/instagramlogo.png" alt="Instagram logo" class="socialemedierlogo"></a>
+            <a href="https://www.facebook.com/redbarnetungdom" target="_blank"><img src="img/facebooklogo.png" alt="Facebook logo" class="socialemedierlogo"></a>
+            <a href="#" target="_blank"><img src="img/tiktoklogo.png" alt="Tiktok logo" class="socialemedierlogo-footer"></a>
+        </div>
+        <div class="copy">
+            <p>@ Red Barnet Ungdom 2024</p>
+        </div>
+    </footer>
+
+</body>
+</html>

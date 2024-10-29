@@ -8,24 +8,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <!-- Header med navigation -->
     <header>
         <nav class="navigation-container-forside">
             <ul class="navigationspunkter">
-                <!-- Logo i navigationen -->
                 <li class="logo"><img src="img/logo.png" alt="LOGO"></li>
-                <!-- Navigation links -->
                 <li><a class="nav-knapper" href="index.html">FORSIDE</a></li>
                 <li><a class="nav-knapper" href="frivillighed.html">FRIVILLIGHED</a></li>
                 <li><a class="nav-knapper" href="doner.html">DONÈR</a></li>
                 <li><a class="nav-knapper" href="#">OM OS</a></li>
                 <li><a class="nav-knapper" href="#">KONTAKT</a></li>
-                <!-- Søgefelt og søgeknap -->
                 <li class="soegefelt-container">
                     <input type="text" id="soegefelt" class="soegefelt" placeholder="Skriv dit søgeord her...">
                     <button onclick="search()" class="soegeknap">Søg</button>
                 </li>
-                <!-- Knap til frivillig tilmelding -->
                 <li><a href="blivfrivillig.html" class="bliv-frivillig-knap">Bliv frivillig</a></li>
             </ul>
         </nav>
@@ -33,6 +30,7 @@
 
     <!-- Hovedindhold -->
     <main>
+
         <!-- Bannersektion med billede og hovedoverskrift -->
         <section class="doner-banner">
             <img src="img/doner.png" alt="Sammenhold">
@@ -49,115 +47,150 @@
                 <p id="doner-beregn-resultat"><strong>Resultat:</strong> Du har hjulpet X børn med Y.</p>
             </div>
         </section>
+
+        <!-- Slideshow overskrift -->
+        <section class="nyheder-overskrift">
+            <h1>Selv et lille beløb gør en forskel</h1>
+        </section>
+
+        <!-- Slideshow sektion -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="img/billedeslidekeramik.jpg" alt="Keramik Event" style="width:100%">
+                <div class="text-under"><span class="bold-text">Event:</span> Keramik Event hvor overskuddet går til Red Barnet Ungdom</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="img/billedeslidelubeklub.jpg" alt="Løbeklub Event" style="width:100%">
+                <div class="text-under"><span class="bold-text">Event:</span> Bliv en del af vores løbeklub og gør en forskel! Saml dine venner, løb sammen, og støt Red Barnet Ungdom med hver kilometer</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="img/billedeslideloppemarked.jpg" alt="Loppemarked Event" style="width:100%">
+                <div class="text-under"><span class="bold-text">Event:</span> Kom med til loppemarked og gør en forskel – hver krone går til Red Barnet Ungdom!</div>
+            </div>
+            <a class="venstre-pil" onclick="plusSlides(-1)"></a>
+            <a class="hoejere-pil" onclick="plusSlides(1)"></a>
+        </div>
+
+        <!-- Slideshow navigation dots -->
+        <div class="dot-container" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+        <!-- Støtte valg sektion -->
+        <section class="stoette-container">
+            <h2>Hvordan vil du støtte?</h2>
+            <div class="stoette-valg">
+                <button class="stoette-knap aktiv">Månedligt bidrag</button>
+                <button class="stoette-knap">Enkelt bidrag</button>
+            </div>
+            <h3>Ja, jeg vil gerne støtte med et månedligt bidrag!</h3>
+        </section>
+
+        <!-- Tilmeldingsformular -->
+        <section class="tilmeld-container">
+            <form id="tilmeldForm">
+                <div class="tilmeld-form-group">
+                    <label for="tilmeld-navn" class="tilmeld-label">Fulde navn:</label>
+                    <input type="text" id="tilmeld-navn" class="tilmeld-input" placeholder="Indtast dit navn">
+                    <div class="tilmeld-error" id="tilmeld-navnError"></div>
+                </div>
+                <div class="tilmeld-form-group">
+                    <label for="tilmeld-birthdate" class="tilmeld-label">Fødselsdag:</label>
+                    <input type="date" id="tilmeld-birthdate" class="tilmeld-input">
+                    <div class="tilmeld-error" id="tilmeld-birthdateError"></div>
+                </div>
+                <div class="tilmeld-form-group">
+                    <label for="tilmeld-city" class="tilmeld-label">By:</label>
+                    <input type="text" id="tilmeld-city" class="tilmeld-input" placeholder="Indtast din by her">
+                    <div class="tilmeld-error" id="tilmeld-cityError"></div>
+                </div>
+                <div class="tilmeld-form-group">
+                    <label for="tilmeld-zipcode" class="tilmeld-label">Postnummer:</label>
+                    <input type="text" id="tilmeld-zipcode" class="tilmeld-input" placeholder="Indtast dit postnummer her">
+                    <div class="tilmeld-error" id="tilmeld-zipcodeError"></div>
+                </div>
+                <div class="tilmeld-form-group">
+                    <label for="tilmeld-email" class="tilmeld-label">E-mail:</label>
+                    <input type="email" id="tilmeld-email" class="tilmeld-input" placeholder="Indtast din e-mail">
+                    <div class="tilmeld-error" id="tilmeld-emailError"></div>
+                </div>
+                <div class="tilmeld-form-group">
+                    <label for="tilmeld-phone" class="tilmeld-label">Telefonnummer:</label>
+                    <input type="tel" id="tilmeld-phone" class="tilmeld-input" placeholder="Indtast dit telefonnummer">
+                    <div class="tilmeld-error" id="tilmeld-phoneError"></div>
+                </div>
+                <div class="tilmeld-form-group">
+                    <label for="tilmeld-interest" class="tilmeld-label">Ønsket indsats:</label>
+                    <select id="tilmeld-interest" class="tilmeld-select">
+                        <option value="">Vælg en mulighed</option>
+                        <option value="events">Børnenes ven</option>
+                        <option value="fundraising">Lektiehjælp</option>
+                        <option value="mentoring">Sports- og fritidsforeninger</option>
+                        <option value="teaching">Hjælp på krisecentre</option>
+                    </select>
+                    <div class="tilmeld-error" id="tilmeld-interestError"></div>
+                </div>
+                <button type="submit" class="tilmeld-button">Tilmeld</button>
+            </form>
+        </section>
+
+        <!-- Enkeltbidrag sektion -->
+        <section class="enkeltbidrag-sektion">
+            <h2>Giv et enkeltbidrag</h2>
+            <p class="enkeltbidrag-beskrivelse">
+                Du vil inden for ti arbejdsdage blive ringet op af en af vores søde konsulenter, der vil fortælle dig 
+                mere om dine muligheder som frivillig i Red Barnet Ungdom. For at blive frivillig skal du være under 30 år.
+            </p>
+            <p class="enkeltbidrag-beskrivelse">
+                Du skal også være medlem og kunne fremvise en ren børneattest – det er ganske let at få styr på, 
+                og det kan du høre meget mere om når du bliver ringet op.
+            </p>
+            <div class="mobilepay-logo">
+                <img src="img/mobilepay.jpg" alt="MobilePay By Danske Bank">
+            </div>
+        </section>
+
     </main>
 
-    <!-- Link til JavaScript-filen -->
-    <section class="nyheder-overskrift">
-        <h1>Selv et lille beløb gør en forskel</h1>
-    </section>
-
-    <div class="slideshow-container">
-    <!-- Slide 1 -->
-    <div class="mySlides fade">
-        <img src="img/billedeslidekeramik.jpg" alt="Keramik Event" style="width:100%">
-        <div class="text-under"><span class="bold-text">Event:</span> Keramik Event hvor overskuddet går til Red Barnet Ungdom</div>
-    </div>
-
-    <!-- Slide 2 -->
-    <div class="mySlides fade">
-        <img src="img/billedeslidelubeklub.jpg" alt="Løbeklub Event" style="width:100%">
-        <div class="text-under"><span class="bold-text">Event:</span> Bliv en del af vores løbeklub og gør en forskel! Saml dine venner, løb sammen, og støt Red Barnet Ungdom med hver kilometer</div>
-    </div>
-
-    <!-- Slide 3 -->
-    <div class="mySlides fade">
-        <img src="img/billedeslideloppemarked.jpg" alt="Loppemarked Event" style="width:100%">
-        <div class="text-under"><span class="bold-text">Event:</span> Kom med til loppemarked og gør en forskel – hver krone går til Red Barnet Ungdom!</div>
-    </div>
-
-    <!-- Pilene -->
-    <a class="venstre-pil" onclick="plusSlides(-1)"></a>
-    <a class="hoejere-pil" onclick="plusSlides(1)"></a>
-    </div>
-
-  <!-- Cirklerne under slideshowet -->
-    <div class="dot-container" style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>
-
-    <script src="billedeslide.js" defer></script>
-
-
-    <!-- JavaScript til beregneren -->
-    <script src="beregner.js"></script>
-
-
-
-    <section class="stoette-container">
-        <h2>Hvordan vil du støtte?</h2>
-        <div class="stoette-valg">
-            <button class="stoette-knap aktiv">Månedligt bidrag</button>
-            <button class="stoette-knap">Enkelt bidrag</button>
+    <!-- Footer af Sophie og Signe -->
+    <footer class="footer">
+        <div class="footercontent">
+            <div class="sektion1">
+                <img src="img/logo.png" alt="Red Barnet Ungdom logo" class="footer-logo">
+                <p><strong>Sekretariatet, København</strong><br>Gammel Kongevej 60, 4. sal<br>1850 Frederiksberg C</p>
+                <p><strong>Sekretariatet, Aarhus</strong><br>Frederiksgade 76A, 1. sal<br>8000 Århus C</p>
+                <p><strong>Telefon:</strong><br>+45 35 24 85 42</p>
+                <p><strong>Mail:</strong><br>redbarnetungdom@redbarnetungdom.dk</p>
+            </div>
+            <div class="sektion2">
+                <p><strong>Lokalforeninger</strong></p>
+                <ul class="liste">
+                    <li>Aarhus</li><li>Esbjerg</li><li>Fyn</li><li>København Nord</li><li>København Syd</li>
+                    <li>Køge</li><li>Midtsjælland</li><li>Nordsjælland</li><li>Randers</li><li>Slagelse</li><li>Vejle</li>
+                </ul>
+            </div>
+            <div class="sektion3">
+                <p><strong>Hurtige links:</strong></p>
+                <p>Bliv frivillig</p>
+                <p>Donér penge</p>
+            </div>
         </div>
-        <h3>Ja, jeg vil gerne støtte med et månedligt bidrag!</h3>
-    </section>
+        <div class="footercontent2">
+            <a href="https://www.linkedin.com/company/red-barnet-ungdom/" target="_blank"><img src="img/linkedinlogo.png" alt="Linkedin logo" class="socialemedierlogo"></a>
+            <a href="https://www.instagram.com/redbarnetungdom/" target="_blank"><img src="img/instagramlogo.png" alt="Instagram logo" class="socialemedierlogo"></a>
+            <a href="https://www.facebook.com/redbarnetungdom" target="_blank"><img src="img/facebooklogo.png" alt="Facebook logo" class="socialemedierlogo"></a>
+            <a href="#" target="_blank"><img src="img/tiktoklogo.png" alt="Tiktok logo" class="socialemedierlogo"></a>
+        </div>
+        <div class="copy">
+            <p>@ Red Barnet Ungdom 2024</p>
+        </div>
+    </footer>
 
-    
-            <!--Tilmeldingsformular-->
-            <body class="tilmeld-body">
-                <div class="tilmeld-container">
-                    <form id="tilmeldForm">
-                        <div class="tilmeld-form-group">
-                            <label for="tilmeld-navn" class="tilmeld-label">Fulde navn:</label>
-                            <input type="text" id="tilmeld-navn" class="tilmeld-input" placeholder="Indtast dit navn">
-                            <div class="tilmeld-error" id="tilmeld-navnError"></div>
-                        </div>
-                        <div class="tilmeld-form-group">
-                            <label for="tilmeld-birthdate" class="tilmeld-label">Fødselsdag:</label>
-                            <input type="date" id="tilmeld-birthdate" class="tilmeld-input">
-                            <div class="tilmeld-error" id="tilmeld-birthdateError"></div>
-                        </div>
-                        <div class="tilmeld-form-group">
-                            <label for="tilmeld-city" class="tilmeld-label">By:</label>
-                            <input type="text" id="tilmeld-city" class="tilmeld-input" placeholder="Indtast din by her">
-                            <div class="tilmeld-error" id="tilmeld-cityError"></div>
-                        </div>
-                        <div class="tilmeld-form-group">
-                            <label for="tilmeld-zipcode" class="tilmeld-label">Postnummer:</label>
-                            <input type="text" id="tilmeld-zipcode" class="tilmeld-input" placeholder="Indtast dit postnummer her">
-                            <div class="tilmeld-error" id="tilmeld-zipcodeError"></div>
-                        </div>
-                        <div class="tilmeld-form-group">
-                            <label for="tilmeld-email" class="tilmeld-label">E-mail:</label>
-                            <input type="email" id="tilmeld-email" class="tilmeld-input" placeholder="Indtast din e-mail">
-                            <div class="tilmeld-error" id="tilmeld-emailError"></div>
-                        </div>
-                        <div class="tilmeld-form-group">
-                            <label for="tilmeld-phone" class="tilmeld-label">Telefonnummer:</label>
-                            <input type="tel" id="tilmeld-phone" class="tilmeld-input" placeholder="Indtast dit telefonnummer">
-                            <div class="tilmeld-error" id="tilmeld-phoneError"></div>
-                        </div>
-                        <div class="tilmeld-form-group">
-                            <label for="tilmeld-interest" class="tilmeld-label">Ønsket indsats:</label>
-                            <select id="tilmeld-interest" class="tilmeld-select">
-                                <option value="">Vælg en mulighed</option>
-                                <option value="events">Børnenes ven</option>
-                                <option value="fundraising">Lektiehjælp</option>
-                                <option value="mentoring">Sports- og fritidsforeninger</option>
-                                <option value="teaching">Hjælp på krisecentre</option>
-                            </select>
-                            <div class="tilmeld-error" id="tilmeld-interestError"></div>
-                        </div>
-                        <button type="submit" class="tilmeld-button">Tilmeld</button>
-                    </form>
-                </div>
-                </body>
-                <!--Tilmeldingsformular slut-->
-    
-
-
+    <!-- JavaScript-filer -->
+    <script src="billedeslide.js" defer></script>
+    <script src="beregner.js" defer></script>
 
 </body>
 </html>
