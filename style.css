@@ -821,14 +821,13 @@ body {
     /* CSS til footeren */
     .footer {
         background-color: #93c7f3;
-        position: absolute;
-        width: 100%;        
+        margin: 0px;
+        padding: 0px;
     }
     
     .footercontent {
         display: flex;
         gap: 200px;
-        margin-left: 200px;
     }
     
     .sektion1 { 
