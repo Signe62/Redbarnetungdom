@@ -1162,6 +1162,7 @@ video {
     font-family: Merriweather, serif;
     color: #ff9100;
     margin: 20px;
+    padding-top: 60px;
 }
 
 .stoette-container h2 {
