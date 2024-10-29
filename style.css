@@ -226,12 +226,6 @@ body {
         width: 80px;
     }
 
-    .soegefelt,
-    .soegeknap,
-    .bliv-frivillig-knap {
-        display: none;
-    }
-
     .banner img {
         height: 200px;
     }
