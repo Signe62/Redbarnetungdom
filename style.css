@@ -946,7 +946,7 @@ body {
 /* Basisindstillinger */
 .tilmeld-container {
     max-width: 600px;
-    margin: 150px auto 100px;
+    margin: 150px auto 40px;
     background-color: white;
     padding: 30px;
     border-radius: 8px;
@@ -1205,9 +1205,10 @@ video {
 .enkeltbidrag-sektion {
     text-align: center;
     font-family: Arial, sans-serif;
-    margin: 40px auto;
+    margin: 20px auto;
     max-width: 800px;
     color: #333;
+    padding: 50px;
 }
 
 .enkeltbidrag-sektion h2 {
