@@ -95,6 +95,7 @@ body {
     color: #ffffff;
     font-size: 48px;
     z-index: 1;
+    font-family: 'Merriweather', serif;
 }
 
 /* Hvem er vi sektion */
@@ -578,7 +579,7 @@ body {
     font-size: 32px;
     color: #ff9100;
     font-family: Merriweather;
-    text-align: center;
+
     margin-top: 5px;
     margin-bottom: 20px;
 }
