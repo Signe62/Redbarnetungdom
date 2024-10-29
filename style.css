@@ -927,33 +927,56 @@ body {
 .quizknapper:hover {
     background-color:#ff9100;
     }
-    /* CSS til quizzen slut*/
+/* CSS til quizzen slut*/
 
-    /* CSS til tilmeldingsformular*/
-.tilmeld-body {
-    font-family: Helvetica, sans-serif;
-    margin: 0;
-    /* padding: 20px; */
-}
 
+/* CSS for tilmeldingsformular */
+/* Basisindstillinger */
 .tilmeld-container {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 150px auto 100px;
     background-color: white;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 100px;
-    margin-top: 150px;
+}
+
+/* Overskrifter */
+.tilmeld-h1 {
+    font-size: 32px;
+    font-family: Merriweather, serif;
+    font-weight: 600;
+    color: #ff9100;
+    text-align: center;
+    margin: 100px 0 20px;
 }
 
 .tilmeld-h2 {
     text-align: center;
-    color: #ff9100; ;
+    color: #ff9100;
     font-size: 30px;
 }
 
-/* Formulargupper */
+.tilmeld-h3 {
+    font-size: 25px;
+    font-family: Merriweather, serif;
+    font-style: italic;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tilmeld-h4 {
+    font-size: 18px;
+    font-family: Merriweather, serif;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    margin: 50px 250px;
+}
+
+/* Formular */
 .tilmeld-form-group {
     margin-bottom: 15px;
 }
@@ -964,14 +987,14 @@ body {
     font-weight: bold;
 }
 
-/* Inputfelter */
-.tilmeld-input, .tilmeld-select {
+.tilmeld-input,
+.tilmeld-select {
     width: 100%;
-    padding: 0px;
+    height: 30px;
     margin-top: 2px;
+    padding: 0;
     border: 1px solid #ccc;
     border-radius: 4px;
-    height: 30px;
 }
 
 /* Knappen */
@@ -997,80 +1020,30 @@ body {
     color: red;
     font-size: 14px;
 }
-    /* CSS til tilmeldingsformular slut*/
 
-
-/*CSS til video*/
+/* Video */
 video {
-display: block;
-margin: auto;
+    display: block;
+    margin: auto;
 }
 
-/* Smartphone: 767px and below */
-@media (max-width: 767px) {
-    video {
-        width: 100%; /* Fuld bredde for smartphones */
-        height: auto; /* Beholder højden proportional */
-    }
-}
-
-
-.tilmeld-h1 {
-    font-size: 32px;
-    font-family: Merriweather;
-    font-weight: 600;
-    color: #ff9100;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 100px;
-}
-
-.tilmeld-h3 {
-    font-size: 25px;
-    font-family: Merriweather;
-    font-style: italic;
-    font-weight: 600;
-    color: #000000;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    }
-
-.tilmeld-h4 {
-    font-size: 18px;
-    font-family: Merriweather;
-    font-weight: 500;
-    color: #000000;
-    text-align: center;
-    margin-top: 50px;
-    margin-left: 250px;
-    margin-right: 250px;
-}
-
-.tilmeld-h4 {
-    font-size: 18px;
-    font-family: Merriweather;
-    font-weight: 500;
-    color: #000000;
-    text-align: center;
-    margin-top: 50px;
-    margin-left: 250px; /* Standard margin for desktop */
-    margin-right: 250px; /* Standard margin for desktop */
-}
-
+/* Media Queries */
 /* Tablet: 768px - 1023px */
 @media (max-width: 1023px) {
     .tilmeld-h4 {
-        margin-left: 50px; /* Juster margen for tablet */
-        margin-right: 50px; /* Juster margen for tablet */
+        margin: 50px 50px;
     }
 }
 
 /* Smartphone: 767px and below */
 @media (max-width: 767px) {
     .tilmeld-h4 {
-        margin-left: 20px; /* Juster margen for smartphones */
-        margin-right: 20px; /* Juster margen for smartphones */
+        margin: 50px 20px;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -1085,11 +1058,9 @@ margin: auto;
 }
 
 .doner-banner img {
-    height: 500px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 
 .doner-banner h1 {
@@ -1097,6 +1068,7 @@ margin: auto;
     color: #ffffff;
     font-size: 48px;
     font-family: 'Merriweather', serif;
+    text-align: center;
 }
 
 /* Beregner sektion */
@@ -1104,7 +1076,7 @@ margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 60px 0;
+    margin: 40px 0;
 }
 
 .doner-beregner-container h1 {
@@ -1170,17 +1142,6 @@ margin: auto;
 
 #doner-beregn-resultat strong {
     font-weight: bold;
-}
-
-@media screen and (min-width: 1024px) {
-    .doner-banner img {
-        height: 500px;
-    }
-}
-.doner-banner img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
 }
 
 /* Styling af støtte sektionen */
@@ -1261,13 +1222,13 @@ margin: auto;
 }
 
 /* Responsiv styling */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .doner-banner img {
-        height: 250px;
+        height: 400px;
     }
 
     .doner-banner h1 {
-        font-size: 36px;
+        font-size: 40px;
         padding: 0 10px;
     }
 
@@ -1281,11 +1242,11 @@ margin: auto;
     }
 
     .doner-beregner-boks label {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .stoette-container h2 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .stoette-valg {
@@ -1294,7 +1255,7 @@ margin: auto;
     }
 
     .stoette-knap {
-        padding: 10px 15px;
+        padding: 8px 15px;
         font-size: 14px;
     }
 
@@ -1311,9 +1272,13 @@ margin: auto;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+    .doner-banner img {
+        height: 250px;
+    }
+
     .doner-banner h1 {
-        font-size: 28px;
+        font-size: 36px;
     }
 
     .doner-beregner-boks input[type="number"] {
@@ -1339,5 +1304,26 @@ margin: auto;
     }
 }
 
+@media (max-width: 480px) {
+    .doner-banner h1 {
+        font-size: 28px;
+    }
+
+    .doner-beregner-container h1 {
+        font-size: 24px;
+    }
+
+    .stoette-container h2 {
+        font-size: 20px;
+    }
+
+    .enkeltbidrag-sektion h2 {
+        font-size: 20px;
+    }
+
+    .enkeltbidrag-beskrivelse {
+        font-size: 12px;
+    }
+}
 /* CSS til "Doner"-siden slut */
 
