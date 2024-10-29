@@ -1,7 +1,7 @@
 // script.js
 
 // 1. Variabler til at gemme søgefeltet og søgeord
-let searchInput = document.getElementById("soegefelt"); 
+let searchInput = document.getElementById("searchInput"); 
 
 // 2. Array der indeholder mulige søgeord og tilhørende URL'er
 let searchKeywords = [
@@ -10,7 +10,7 @@ let searchKeywords = [
     { keyword: "doner", url: "doner.html" },
     { keyword: "tilmeld", url: "blivfrivillig.html" },
     { keyword: "quiz", url: "frivillighed.html" },
-    { keyword: "cv", url: "index.html" } 
+    { keyword: "CV", url: "index.html" }  
 ];
 
 // 3. Søgefunktion
