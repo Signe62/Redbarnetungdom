@@ -269,6 +269,10 @@ body {
 }
 
 
+
+
+
+
 /* Design for 'Boost din ansøgning" sektionen */
 .billede-og-tekst-ansoening {
     display: flex;
@@ -291,10 +295,9 @@ body {
 }
 
 .billede-ansoening img {
-    display: flex;
-    justify-content: stretch;
-    height: 100%;
+    display: block;
     width: 100%;
+    height: auto;
 }
 
 .tekst-ansoening {
@@ -304,8 +307,6 @@ body {
 
 /* Overskrift */
 .tekst-ansoening h2 {
-    display: flex;
-    display: inline;
     font-size: 32px;
     font-family: Merriweather;
     color: #ff9100;
@@ -320,7 +321,7 @@ body {
 /* Knap container */
 .knap-container-ansoening {
     text-align: center;
-    margin-top: 5px;
+    margin-top: 30px;
 }
 
 /* Styling af knappen */
@@ -341,10 +342,6 @@ body {
     background-color: #ff9100;
 }
 
-
-
-
-
 /* Mobile Responsiveness - Media Query */
 @media (max-width: 768px) {
     .billede-og-tekst-ansoening {
@@ -355,43 +352,35 @@ body {
     .billede-tekst-container-ansoening {
         flex-direction: column;
         width: 100%;
-        justify-content: center;
         max-width: 100%;
-        margin: 0 auto;
         padding: 0;
+        margin: 0 auto;
     }
 
     .billede-ansoening {
-        width: 100%;
         max-width: 100%;
-        padding-right: 0;
         margin-bottom: 20px;
-    }
-
-    .billede-ansoening img {
-        width: 100%;
-        height: auto;
+        margin-right: 0;
     }
 
     .tekst-ansoening {
-        width: 100%;
-        text-align: left;
+        max-width: 100%;
         padding: 0 15px;
+        text-align:left; 
     }
 
     .tekst-ansoening h2 {
-        font-size: 28px;
-        text-align: left;
+        font-size: 24px;
     }
 
     .tekst-ansoening p {
         font-size: 16px;
-        text-align: left;
-        margin: 0 0 20px 0;
+        margin: 0 0 15px 0;
     }
 
     .knap-container-ansoening {
-        margin-top: 15px;
+        margin-top: 20px;
+        text-align: center;
     }
 
     .btn-ansoening {
@@ -399,6 +388,7 @@ body {
         padding: 12px 25px;
     }
 }
+
 
 
 /* Design for Slideshow sektionen */
@@ -678,6 +668,8 @@ body {
         font-size: 18px;
     }
 }
+
+
 
 
 /* CSS til frivillighed-siden */ 
