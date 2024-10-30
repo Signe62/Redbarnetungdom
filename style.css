@@ -942,99 +942,7 @@ body {
 
 /* CSS til quizzen slut*/
 
-
-/* CSS for tilmeldingsformular */
-/* Basisindstillinger */
-.tilmeld-container {
-    max-width: 600px;
-    margin: 150px auto 40px;
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Overskrifter */
-.tilmeld-h1 {
-    font-size: 32px;
-    font-family: Merriweather, serif;
-    font-weight: 600;
-    color: #ff9100;
-    text-align: center;
-    margin: 100px 0 20px;
-}
-
-.tilmeld-h2 {
-    text-align: center;
-    color: #ff9100;
-    font-size: 30px;
-}
-
-.tilmeld-h3 {
-    font-size: 25px;
-    font-family: Merriweather, serif;
-    font-style: italic;
-    font-weight: 600;
-    color: #000;
-    text-align: center;
-    margin: 20px 0;
-}
-
-.tilmeld-h4 {
-    font-size: 18px;
-    font-family: Merriweather, serif;
-    font-weight: 500;
-    color: #000;
-    text-align: center;
-    margin: 50px 250px;
-}
-
-/* Formular */
-.tilmeld-form-group {
-    margin-bottom: 15px;
-}
-
-.tilmeld-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.tilmeld-input,
-.tilmeld-select {
-    width: 100%;
-    height: 30px;
-    margin-top: 2px;
-    padding: 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-/* Knappen */
-.tilmeld-button {
-    background-color: #d4342b;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.tilmeld-button:hover {
-    background-color: #ff9100;
-}
-
-/* Fejlmeddelelser */
-.tilmeld-error {
-    color: red;
-    font-size: 14px;
-}
-
-/* Video */
+/* CSS for video */
 video {
     display: block;
     margin: auto;
@@ -1059,6 +967,84 @@ video {
         height: auto;
     }
 }
+/* CSS video slut */
+
+/* CSS for tilmeldingsformular */
+/* Basisindstillinger */
+.tilmeld-container {
+    max-width: 600px;
+    margin: 150px auto 40px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Overskrifter */
+.tilmeld-h2 {
+    text-align: center;
+    color: #ff9100;
+    font-size: 26px; /* Justeret størrelse for bedre match */
+    font-weight: bold; /* Brug fed skrift for at matche billedet */
+}
+
+/* Formular */
+.tilmeld-form-group {
+    margin-bottom: 15px;
+}
+
+.tilmeld-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: normal; /* Justeret til normal vægt */
+    font-size: 14px; /* Mindre fontstørrelse for labels */
+    font-family: Helvetica, sans-serif;
+}
+
+.tilmeld-input,
+.tilmeld-select,
+.tilmeld-textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px; /* Justeret fontstørrelse for inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Lys baggrund som på billedet */
+}
+
+/* Knap */
+.tilmeld-button {
+    background-color: #d4342b;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.tilmeld-button:hover {
+    background-color: #ff9100;
+}
+
+/* Fejlmeddelelser */
+.tilmeld-error {
+    color: red;
+    font-size: 12px;
+}
+
+/* Instruktionstekst */
+.tilmeld-container p {
+    font-size: 13px;
+    color: #555; /* Grå farve til instruktionstekst */
+    margin-top: 10px;
+    line-height: 1.4;
+}
+/* CSS slut tilmeldingsformular */
+
 
 
 /* CSS til "Doner"-siden */
