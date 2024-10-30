@@ -1105,8 +1105,10 @@ video {
 }
 
 .doner-beregner-boks label {
-    font-size: 32px;
+    font-size: 18px;
     font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    margin-top: 20px;
 }
 
 .doner-beregner-boks input[type="number"] {
