@@ -1346,7 +1346,7 @@ video {
 }
 
 .tilmeld-h4 {
-    text-align: center;
+    text-align: left;
     font-size: 18px;
     max-width: 800px;
     line-height: 1.5;
@@ -1354,3 +1354,4 @@ video {
     margin: 0 auto;
     font-family: Helvetica, sans-serif, sans-serif;
 }
+
