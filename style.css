@@ -984,7 +984,7 @@ video {
 .tilmeld-h2 {
     text-align: center;
     color: #ff9100;
-    font-size: 26px; /* Justeret størrelse for bedre match */
+    font-size: 28px;
     font-weight: bold; /* Brug fed skrift for at matche billedet */
 }
 
@@ -1019,8 +1019,8 @@ video {
     font-size: 16px;
     font-weight: bold;
     border: none;
-    padding: 12px;
-    border-radius: 4px;
+    padding: 10px;
+    border-radius: 20px;
     cursor: pointer;
     width: 100%;
     margin-top: 20px;
@@ -1033,15 +1033,13 @@ video {
 /* Fejlmeddelelser */
 .tilmeld-error {
     color: red;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 /* Instruktionstekst */
 .tilmeld-container p {
-    font-size: 13px;
-    color: #555; /* Grå farve til instruktionstekst */
-    margin-top: 10px;
-    line-height: 1.4;
+    font-size: 12px;
+    line-height: 1.5;
 }
 /* CSS slut tilmeldingsformular */
 
