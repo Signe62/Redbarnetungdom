@@ -756,6 +756,37 @@ body {
 }
     /* CSS til frivillighed-siden slut*/ 
 
+    @media (max-width: 1199px) { /* CSS til billedslide på frivillighedssiden - responsiv*/  
+
+        .frivillighedh1 {
+            font-size: 36px;
+    }
+    
+    .frivillighedh2 {
+        font-size: 30px;  
+    }
+    
+    .frivillighedbilleder {
+        height: 200px;
+        width: 230px; 
+    }
+    
+    .frivillighedh5 {
+        font-size: 20px;
+    }
+    
+    .frivillighedbroedtekst {
+        font-size: 16px;
+        width: 230px;
+    }
+    
+    .frivillighedslide { 
+        justify-content: center; 
+        margin-left: 0px; 
+    
+    }
+    }
+
 
 /* CSS til footeren */
 .footer {
