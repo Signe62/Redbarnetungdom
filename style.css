@@ -1242,6 +1242,32 @@ video {
     font-weight: bold;
 }
 
+/* Små skærme (maks. bredde 768px) */
+@media (max-width: 768px) {
+    .doner-beregner-container h1 {
+        font-size: 28px;
+    }
+
+    .doner-beregner-boks {
+        padding: 16px;
+        width: auto;
+    }
+
+    .doner-beregner-boks label {
+        font-size: 14px;
+    }
+
+    .doner-beregner-boks input[type="number"] {
+        font-size: 14px;
+        width: auto;
+    }
+
+    #doner-beregn-knap {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+}
+
 /* Styling af støtte sektionen */
 .stoette-container {
     text-align: center;
