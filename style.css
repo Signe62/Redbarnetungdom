@@ -685,7 +685,7 @@ body {
     margin-top: -20px;
 }
 
-.frivillighedh3 { /* "Aktiviteter og events i Red Barnet Ungdom" */
+.frivillighedh3-slide { /* "Aktiviteter og events i Red Barnet Ungdom" */
     text-align: center;
     font-family: merriweather;
     color: #ff9100; 
@@ -796,8 +796,39 @@ body {
     .frivillighedslide { 
         justify-content: center; 
         margin-left: 0px; 
-    
     }
+}
+
+    @media (max-width: 768px) { /* CSS til billedslide på frivillighedssiden - responsiv - mobil*/  
+
+    .frivillighedh1 {
+    display: none;
+    }
+    
+    .frivillighedh2 {
+        display: none;  
+    }
+
+    .frivillighedh3-slide {
+        display: none;
+    }
+    
+    .frivillighedbilleder {
+        display: none; 
+    }
+    
+    .frivillighedh5 {
+        font-size: 20px;
+    }
+    
+    .frivillighedbroedtekst {
+        display: none; 
+    }
+    
+    .frivillighedslide { 
+        display: none; 
+    }
+}
 
     /* Pilene bliver skjult på skærme mindre end 768px */
     @media (max-width: 767px) {
@@ -805,9 +836,6 @@ body {
         display: none;
     }   
     }
-
-    }
-
 
 /* CSS til footeren */
 .footer {
@@ -906,6 +934,14 @@ body {
 
 
 /* CSS til quizzen */
+.frivillighedh3 {
+    text-align: center;
+    font-family: merriweather;
+    color: #ff9100; 
+    font-size: 48px;
+    margin-top: 150px;
+}
+
 .progress-container {
     width: 50%;
     background-color: #93c7f3;
