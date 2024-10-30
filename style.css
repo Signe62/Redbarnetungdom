@@ -401,7 +401,7 @@ body {
     color: #ff9100;
     margin: 0; 
     font-weight: bold;
-    font-size: 32px;
+    font-size: 48px;
 }
 
 /* Design for slideshowet */
@@ -1188,7 +1188,7 @@ video {
 }
 
 .enkeltbidrag-sektion h2 {
-    font-size: 28px;
+    font-size: 48px;
     color: #ff9100;
     font-weight: bold;
     margin-bottom: 20px;
@@ -1196,9 +1196,8 @@ video {
 }
 
 .enkeltbidrag-beskrivelse {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
-    color: #333;
     margin-bottom: 20px;
     text-align: left;
 }
