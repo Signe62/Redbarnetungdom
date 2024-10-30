@@ -8,7 +8,6 @@ let currentQuestion = 1;
 const totalQuestions = 3;
 
 function answerQuestion(questionNumber, answer) {
-    // Find the answer object by name and increment its value
     const answerObj = answers.find(obj => obj.name === answer);
     if (answerObj) {
         answerObj.value++;
