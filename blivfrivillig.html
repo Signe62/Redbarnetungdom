@@ -31,57 +31,66 @@
     </header>
 
     <!-- Introduktionstekst til tilmelding -->
-    <h1 class="tilmeld-h1">Kunne du tænke dig at arbejde som frivillig for Red Barnet Ungdom?</h1>
-    <h3 class="tilmeld-h3">Tilmeld dig i formularen herunder, og vi kontakter dig!</h3>
-    <h4 class="tilmeld-h4">Du vil inden for ti arbejdsdage modtage en opringning fra en af vores søde konsulenter, som vil fortælle dig mere om dine muligheder som frivillig i Red Barnet Ungdom...</h4>
+    <h1 class="tilmeld-h1">Bliv frivillig og kom med på et fantastisk team!</h1>
+    <h3 class="tilmeld-h3">Udfyld nedestående, så ringer vi dig op!</h3>
+    <h4 class="tilmeld-h4">Du vil inden for ti arbejdsdage blive ringet op af en af vores søde konsulenter, der vil fortælle dig mere om dine muligheder som frivillig i Red Barnet Ungdom. For at blive frivillig skal du være under 30 år.
 
-    <!-- Tilmeldingsformular -->
-    <div class="tilmeld-container">
-        <form id="tilmeldForm">
-            <div class="tilmeld-form-group">
-                <label for="tilmeld-navn" class="tilmeld-label">Fulde navn:</label>
-                <input type="text" id="tilmeld-navn" class="tilmeld-input" placeholder="Indtast dit navn">
-                <div class="tilmeld-error" id="tilmeld-navnError"></div>
-            </div>
-            <div class="tilmeld-form-group">
-                <label for="tilmeld-birthdate" class="tilmeld-label">Fødselsdag:</label>
-                <input type="date" id="tilmeld-birthdate" class="tilmeld-input">
-                <div class="tilmeld-error" id="tilmeld-birthdateError"></div>
-            </div>
-            <div class="tilmeld-form-group">
-                <label for="tilmeld-city" class="tilmeld-label">By:</label>
-                <input type="text" id="tilmeld-city" class="tilmeld-input" placeholder="Indtast din by her">
-                <div class="tilmeld-error" id="tilmeld-cityError"></div>
-            </div>
-            <div class="tilmeld-form-group">
-                <label for="tilmeld-zipcode" class="tilmeld-label">Postnummer:</label>
-                <input type="text" id="tilmeld-zipcode" class="tilmeld-input" placeholder="Indtast dit postnummer her">
-                <div class="tilmeld-error" id="tilmeld-zipcodeError"></div>
-            </div>
-            <div class="tilmeld-form-group">
-                <label for="tilmeld-email" class="tilmeld-label">E-mail:</label>
-                <input type="email" id="tilmeld-email" class="tilmeld-input" placeholder="Indtast din e-mail">
-                <div class="tilmeld-error" id="tilmeld-emailError"></div>
-            </div>
-            <div class="tilmeld-form-group">
-                <label for="tilmeld-phone" class="tilmeld-label">Telefonnummer:</label>
-                <input type="tel" id="tilmeld-phone" class="tilmeld-input" placeholder="Indtast dit telefonnummer">
-                <div class="tilmeld-error" id="tilmeld-phoneError"></div>
-            </div>
-            <div class="tilmeld-form-group">
-                <label for="tilmeld-interest" class="tilmeld-label">Ønsket indsats:</label>
-                <select id="tilmeld-interest" class="tilmeld-select">
-                    <option value="">Vælg en mulighed</option>
-                    <option value="events">Børnenes ven</option>
-                    <option value="fundraising">Lektiehjælp</option>
-                    <option value="mentoring">Sports- og fritidsforeninger</option>
-                    <option value="teaching">Hjælp på krisecentre</option>
-                </select>
-                <div class="tilmeld-error" id="tilmeld-interestError"></div>
-            </div>
-            <button type="submit" class="tilmeld-button">Tilmeld</button>
-        </form>
-    </div>
+        Du skal også være medlem og kunne fremvise en ren børneattest – det er ganske let at få styr på og det kan du høre meget mere om når du bliver ringet op.</h4>
+
+<!-- Tilmeldingsformular -->
+<div class="tilmeld-container">
+    <h2 class="tilmeld-h2">Tilmeldingsformular til at blive frivillig</h2>
+    <form id="tilmeldForm">
+        <div class="tilmeld-form-group">
+            <label for="tilmeld-navn" class="tilmeld-label">Fulde navn *</label>
+            <input type="text" id="tilmeld-navn" class="tilmeld-input" placeholder="">
+            <div class="tilmeld-error" id="tilmeld-navnError"></div>
+        </div>
+        <div class="tilmeld-form-group">
+            <label for="tilmeld-zipcode" class="tilmeld-label">Postnummer *</label>
+            <input type="text" id="tilmeld-zipcode" class="tilmeld-input" placeholder="">
+            <div class="tilmeld-error" id="tilmeld-zipcodeError"></div>
+        </div>
+        <div class="tilmeld-form-group">
+            <label for="tilmeld-city" class="tilmeld-label">By *</label>
+            <input type="text" id="tilmeld-city" class="tilmeld-input" placeholder="">
+            <div class="tilmeld-error" id="tilmeld-cityError"></div>
+        </div>
+        <div class="tilmeld-form-group">
+            <label for="tilmeld-birthdate" class="tilmeld-label">Fødselsdag *</label>
+            <input type="date" id="tilmeld-birthdate" class="tilmeld-input" placeholder="dd/mm/åååå">
+            <div class="tilmeld-error" id="tilmeld-birthdateError"></div>
+        </div>
+        <div class="tilmeld-form-group">
+            <label for="tilmeld-phone" class="tilmeld-label">Telefonnr *</label>
+            <input type="tel" id="tilmeld-phone" class="tilmeld-input" placeholder="">
+            <div class="tilmeld-error" id="tilmeld-phoneError"></div>
+        </div>
+        <div class="tilmeld-form-group">
+            <label for="tilmeld-email" class="tilmeld-label">Email *</label>
+            <input type="email" id="tilmeld-email" class="tilmeld-input" placeholder="">
+            <div class="tilmeld-error" id="tilmeld-emailError"></div>
+        </div>
+        <div class="tilmeld-form-group">
+            <label for="tilmeld-interest" class="tilmeld-label">Ønsket indsats *</label>
+            <select id="tilmeld-interest" class="tilmeld-select">
+                <option value="">-- Vælg --</option>
+                <option value="friend">Børnenes ven</option>
+                <option value="tutoring">Lektiehjælp</option>
+                <option value="sports">Sports- og fritidsforeninger</option>
+                <option value="crisis">Hjælp på krisecentre</option>
+            </select>
+            <div class="tilmeld-error" id="tilmeld-interestError"></div>
+        </div>
+        <p>Vælg hvad du vil være del af eller hvis du ikke har nogle særlige ønsker.<br>Har du nogle ønsker til arbejdet som frivillig?</p>
+        <div class="tilmeld-form-group">
+            <textarea id="tilmeld-notes" class="tilmeld-textarea" placeholder=""></textarea>
+            <div class="tilmeld-error" id="tilmeld-notesError"></div>
+        </div>
+        <button type="submit" class="tilmeld-button">Send</button>
+    </form>
+</div>
+<!-- Tilmeldingsformular slut -->
 
     <!-- Footer af Sophie og Signe -->
     <footer class="footer">

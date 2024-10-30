@@ -1326,3 +1326,31 @@ video {
 }
 /* CSS til "Doner"-siden slut */
 
+/* CSS til "Bliv frivillig"-siden, blå-knap */
+/* Overskrifter og introduktionstekst */
+.tilmeld-h1 {
+    text-align: center;
+    color: #ff9100; /* Orange farve */
+    font-size: 48px; /* Justeret størrelse */
+    font-weight: bold; /* Fed skrift */
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.tilmeld-h3 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: normal;
+    margin-top: 10;
+    margin-bottom: 20px;
+}
+
+.tilmeld-h4 {
+    text-align: center;
+    font-size: 18px;
+    max-width: 800px;
+    line-height: 1.5;
+    font-weight: normal;
+    margin: 0 auto;
+    font-family: Helvetica, sans-serif, sans-serif;
+}
