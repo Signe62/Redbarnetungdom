@@ -429,7 +429,7 @@ body {
     margin-top: 0;
     margin-left: 0;
     font-family: Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 /* Design af pile */
@@ -719,7 +719,7 @@ body {
 }
 
 .frivillighedh5 { /* Overskriften til hvert af de 3 billeder */
-    font-family: merriweather;
+    font-family: Merriweather;
     font-size: 25px;
     margin-top: 0px;
 }
@@ -774,7 +774,7 @@ body {
 }
 
 .sektion1, .sektion2, .sektion3 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 14px;
     line-height: 1.5;
 }
@@ -811,7 +811,7 @@ body {
 
 /* Copy-sektion */
 .copy {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     text-align: center;
     color: lightgrey;
     background-color: #6E95B6;
@@ -872,8 +872,11 @@ body {
     }
     
 .quiz-tekst {
-        text-align: center;
+    text-align: center;
     font-size: large;
+    font-family: Merriweather;
+    font-size: 32px;
+
     }
     
 .question {
@@ -883,6 +886,7 @@ body {
     
 .activeq {
     display: block;
+    font-family: Helvetica, sans-serif;
     }
     
 .svarmuligheder {
