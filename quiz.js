@@ -8,8 +8,11 @@ let currentQuestion = 1;
 const totalQuestions = 3;
 
 function answerQuestion(questionNumber, answer) {
-    // Tæl svar
-    answers[answer]++;
+    // Find the answer object by name and increment its value
+    const answerObj = answers.find(obj => obj.name === answer);
+    if (answerObj) {
+        answerObj.value++;
+    }
     console.log(`Answered question ${questionNumber}: ${answer}`);
 
     // Opdater progress bar
@@ -29,7 +32,6 @@ function updateProgressBar(questionNumber) {
 }
 
 function showNextQuestion(questionNumber) {
-    // Skjul alle spørgsmål og vis kun det aktuelle
     for (let i = 1; i <= totalQuestions; i++) {
         document.getElementById(`question${i}`).classList.remove('activeq');
     }
@@ -51,29 +53,21 @@ function goBack() {
 }
 
 function showResult() {
-    // Skjul sidste spørgsmål og vis resultat
     document.getElementById(`question${currentQuestion}`).classList.remove('activeq');
     document.getElementById('result').style.display = 'block';
 
     // Sortér svarene for at finde den højeste score
-    let sortedAnswers = Object.keys(answers).sort((a, b) => answers[b] - answers[a]);
+    let sortedAnswers = answers.sort((a, b) => b.value - a.value);
 
     // Tjek om alle svar er ens
-    let allEqual = true;
-    for (let i = 1; i < sortedAnswers.length; i++) {
-        if (answers[sortedAnswers[i]] !== answers[sortedAnswers[0]]) {
-            allEqual = false;
-            break;
-        }
-    }
+    let allEqual = sortedAnswers.every(obj => obj.value === sortedAnswers[0].value);
 
     if (allEqual) {
         showMultipleResults();
     } else {
-        showSingleResult(sortedAnswers[0]);
+        showSingleResult(sortedAnswers[0].name);
     }
 
-    // Sæt progress bar til 100%
     updateProgressBar(totalQuestions);
 }
 
@@ -102,11 +96,8 @@ function getResultText(result) {
 }
 
 function restartQuiz() {
-    // Nulstil svar
-    answers = { running: 0, learning: 0, crisis: 0 };
+    answers.forEach(obj => obj.value = 0);
     currentQuestion = 1;
-    
-    // Skjul resultatet og vis første spørgsmål
     document.getElementById('result').style.display = 'none';
     showNextQuestion(1);
     updateProgressBar(0);
