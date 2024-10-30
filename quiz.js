@@ -1,8 +1,8 @@
-let answers = {
-    running: 0,
-    learning: 0,
-    crisis: 0
-};
+let answers = [
+    { name: "running", value: 0 },
+    { name: "learning", value: 0 },
+    { name: "crisis", value: 0 }
+];
 
 let currentQuestion = 1;
 const totalQuestions = 3;
