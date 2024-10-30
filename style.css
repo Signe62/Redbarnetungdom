@@ -1078,7 +1078,7 @@ video {
 
 .doner-beregner-container h1 {
     color: #ff9100;
-    font-size: 36px;
+    font-size: 48px;
     font-family: 'Merriweather', serif;
     font-weight: bold;
     text-align: center;
@@ -1100,30 +1100,29 @@ video {
 }
 
 .doner-beregner-boks label {
-    color: #000;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
 }
 
 .doner-beregner-boks input[type="number"] {
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
     font-size: 16px;
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 #doner-beregn-knap {
     background-color: #d4342b;
+    font-weight: bold;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
     font-size: 16px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top:20px;
 }
 
 #doner-beregn-knap:hover {
@@ -1131,10 +1130,8 @@ video {
 }
 
 #doner-beregn-resultat {
-    font-size: 24px;
-    color: #000;
-    margin: 10px;
-    padding: 10px;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
 }
 
 #doner-beregn-resultat strong {

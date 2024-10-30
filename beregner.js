@@ -4,10 +4,10 @@ let resultat = document.getElementById('doner-beregn-resultat');
 
 // Array til at matche donation og effekt
 let donationsEffekter = [
-    { beloeb: 100, effekt: "5 børn får et sundt og nærende måltid" },
-    { beloeb: 250, effekt: "10 børn får skolebøger og skolesager" },
-    { beloeb: 500, effekt: "medicin til 20 børn" },
-    { beloeb: 1000, effekt: "hjælp til at give et barn et trygt hjem" }
+    { beloeb: 100, effekt: "en klasse et sundt og nærende måltid" },
+    { beloeb: 250, effekt: "10 børn skolebøger og skolesager" },
+    { beloeb: 500, effekt: "medicinsk hjælp til 20 børn" },
+    { beloeb: 1000, effekt: "3 børn et trygt hjem" }
 ];
 
 // Funktion til at beregne donationens effekt
