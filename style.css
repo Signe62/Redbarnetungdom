@@ -818,7 +818,7 @@ body {
     }
     
     .frivillighedh5 {
-        font-size: 20px;
+        display: none; 
     }
     
     .frivillighedbroedtekst {
