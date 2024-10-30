@@ -91,7 +91,7 @@ function showMultipleResults() {
 function getResultText(result) {
     switch (result) {
         case 'running':
-            return 'At være medlem i løbeklubben. Som medlem i løbeklubben går medlemsprisen pr. måned direkte til Red Barnet Ungdom, og du bliver en del af et ungt fællesskab med god energi.';
+            return 'At være medlem i løbeklubben. Som medlem i løbeklubben går medlemsprisen på 25 kr. per gang du deltager direkte til Red Barnet Ungdom, og du bliver en del af et ungt fællesskab med god energi.';
         case 'learning':
             return 'At undervise børn og unge. Du vil være med til at støtte og styrke børn og unge, der har det svært i skolen - Bl.a. med lektiehjælp, læring og selvtillid.';
         case 'crisis':

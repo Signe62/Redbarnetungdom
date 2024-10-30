@@ -971,6 +971,7 @@ body {
 .question {
     display: none;
     text-align: center;
+    font-size: 18px;
     }
     
 .activeq {
@@ -985,6 +986,7 @@ body {
     border-width: 1px;
     padding: 10px;
     cursor: pointer;
+    font-size: 18px;
     }
     
 .svarmuligheder:hover {
@@ -993,13 +995,17 @@ body {
     
 #result {
     text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
     }
     
 #result-text {
     text-align: center;
     margin-left: 30%;
     margin-right: 30%;
-    line-height: 25px;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+
     }
     
 .question div, #result div {
