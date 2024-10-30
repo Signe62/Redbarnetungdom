@@ -1069,6 +1069,7 @@ video {
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #f9f9f9; /* Lys baggrund som på billedet */
+    font-family: Helvetica, sans-serif
 }
 
 /* Knap */
