@@ -90,8 +90,8 @@
         <section class="stoette-container">
             <h2>Hvordan vil du støtte?</h2>
             <div class="stoette-valg">
-                <a href="#tilmeld_cont"><button class="stoette-knap aktiv">Månedligt bidrag</button></a>
-                <a href="#enkeltbidrag"><button class="stoette-knap">Enkelt bidrag</button></a>
+                <button class="stoette-knap aktiv" onclick="location.href='#tilmeld_cont'">Månedligt bidrag</button>
+                <button class="stoette-knap" onclick="location.href='#enkeltbidrag'">Enkelt bidrag</button>
             </div>
         </section>
 
@@ -104,7 +104,7 @@
             <div class="tilmeld-error" id="tilmeld-navnError"></div>
         </div>
         <div class="tilmeld-form-group">
-            <label for="tilmeld-adresse" class="tilmeld-label">Adresse *</label>
+            <label for="tilmeld-vejnavn" class="tilmeld-label">Adresse *</label>
             <input type="text" id="tilmeld-vejnavn" class="tilmeld-input" placeholder="Vej">
             <input type="text" id="tilmeld-vejnummer" class="tilmeld-input" placeholder="Postnummer">
             <input type="text" id="tilmeld-etage" class="tilmeld-input" placeholder="By">
